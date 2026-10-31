@@ -27,10 +27,28 @@
         <!-- Background -->
         <item name="android:colorBackground">@color/pixel_light_background</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="windowBackground">@color/background_color</item>
 
         <!-- Error colors -->
         <item name="colorError">#B00020</item>
         <item name="colorOnError">#FFFFFF</item>
+
+        <!-- NewPipe custom attributes (preserved for compatibility) -->
+        <item name="actionColor">@color/toolbar_title</item>
+        <item name="toolbarSearchColor">@color/toolbar_title</item>
+        <item name="separator_color">@color/separator_color</item>
+        <item name="contrast_background_color">@color/divider_color</item>
+        <item name="checked_selector">@drawable/selector_checked_light</item>
+        <item name="focused_selector">@drawable/selector_focused_light</item>
+        <item name="toolbar_shadow">@drawable/toolbar_shadow_light</item>
+        <item name="selector">@drawable/selector_light</item>
+        <item name="colorControlHighlight">@color/colorRipple</item>
+        <item name="progress_horizontal_drawable">@drawable/progress_youtube_horizontal_light</item>
+        <item name="card_item_background_color">@color/surface_color</item>
+        <item name="card_item_contrast_color">@color/divider_color</item>
+        <item name="border_color">@color/divider_color</item>
+        <item name="dashed_border">@drawable/dashed_border_light</item>
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonTheme</item>
 
         <!-- Shape appearance -->
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Tomoko.SmallComponent</item>
@@ -65,27 +83,45 @@
 
     </style>
 
-<!-- Shape Appearance - Base -->
-<style name="TomokoShapeAppearanceBase" />
+    <!-- Pixel dialog themes -->
+    <style name="Theme.Tomoko.Pixel.Dialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorPrimary">@color/pixel_light_primary</item>
+        <item name="colorPrimaryDark">@color/pixel_light_primary_variant</item>
+        <item name="colorAccent">@color/pixel_light_primary</item>
+        <item name="android:windowBackground">@color/pixel_light_surface</item>
+        <item name="windowBackground">@color/pixel_light_surface</item>
+    </style>
 
-<!-- Shape Appearance - Pixel style rounded corners -->
-<style name="ShapeAppearance.Tomoko.SmallComponent"
-    parent="TomokoShapeAppearanceBase">
-    <item name="cornerFamily">rounded</item>
-    <item name="cornerSize">4dp</item>
-</style>
+    <style name="Theme.Tomoko.Pixel.Dialog.MinWidth" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
+        <item name="colorPrimary">@color/pixel_light_primary</item>
+        <item name="colorPrimaryDark">@color/pixel_light_primary_variant</item>
+        <item name="colorAccent">@color/pixel_light_primary</item>
+        <item name="android:windowBackground">@color/pixel_light_surface</item>
+        <item name="windowBackground">@color/pixel_light_surface</item>
+    </style>
 
-<style name="ShapeAppearance.Tomoko.MediumComponent"
-    parent="TomokoShapeAppearanceBase">
-    <item name="cornerFamily">rounded</item>
-    <item name="cornerSize">12dp</item>
-</style>
+    <!-- Shape Appearance - Base -->
+    <style name="TomokoShapeAppearanceBase" />
 
-<style name="ShapeAppearance.Tomoko.LargeComponent"
-    parent="TomokoShapeAppearanceBase">
-    <item name="cornerFamily">rounded</item>
-    <item name="cornerSize">16dp</item>
-</style>
+    <!-- Shape Appearance - Pixel style rounded corners -->
+    <style name="ShapeAppearance.Tomoko.SmallComponent"
+        parent="TomokoShapeAppearanceBase">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Tomoko.MediumComponent"
+        parent="TomokoShapeAppearanceBase">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Tomoko.LargeComponent"
+        parent="TomokoShapeAppearanceBase">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
     <!-- Typography - Google Sans inspired -->
 
     <style name="TextAppearance.Tomoko.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">

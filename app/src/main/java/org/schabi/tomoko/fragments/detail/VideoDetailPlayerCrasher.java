@@ -73,9 +73,7 @@ public final class VideoDetailPlayerCrasher {
     private static Context getThemeWrapperContext(final Context context) {
         return new ContextThemeWrapper(
                 context,
-                ThemeHelper.isLightThemeSelected(context)
-                        ? R.style.LightTheme
-                        : R.style.DarkTheme);
+                R.style.Theme_Tomoko_Pixel);
     }
 
     public static void onCrashThePlayer(

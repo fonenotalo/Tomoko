@@ -98,7 +98,7 @@ public final class ThemeHelper {
      */
     @StyleRes
     public static int getDialogTheme(final Context context) {
-        return isLightThemeSelected(context) ? R.style.LightDialogTheme : R.style.DarkDialogTheme;
+        return R.style.Theme_Tomoko_Pixel_Dialog;
     }
 
     /**
@@ -109,8 +109,7 @@ public final class ThemeHelper {
      */
     @StyleRes
     public static int getMinWidthDialogTheme(final Context context) {
-        return isLightThemeSelected(context) ? R.style.LightDialogMinWidthTheme
-                : R.style.DarkDialogMinWidthTheme;
+        return R.style.Theme_Tomoko_Pixel_Dialog_MinWidth;
     }
 
     /**
@@ -130,53 +129,8 @@ public final class ThemeHelper {
 
         final String selectedThemeKey = getSelectedThemeKey(context);
 
-
-        int baseTheme = R.style.DarkTheme; // default to dark theme
-        if (selectedThemeKey.equals(lightThemeKey)) {
-            baseTheme = R.style.LightTheme;
-        } else if (selectedThemeKey.equals(blackThemeKey)) {
-            baseTheme = R.style.BlackTheme;
-        } else if (selectedThemeKey.equals(automaticDeviceThemeKey)) {
-
-            if (isDeviceDarkThemeEnabled(context)) {
-                // use the dark theme variant preferred by the user
-                final String selectedNightThemeKey = getSelectedNightThemeKey(context);
-                if (selectedNightThemeKey.equals(blackThemeKey)) {
-                    baseTheme = R.style.BlackTheme;
-                } else {
-                    baseTheme = R.style.DarkTheme;
-                }
-            } else {
-                // there is only one day theme
-                baseTheme = R.style.LightTheme;
-            }
-        }
-
-        if (serviceId <= -1) {
-            return baseTheme;
-        }
-
-        final StreamingService service;
-        try {
-            service = NewPipe.getService(serviceId);
-        } catch (final ExtractionException ignored) {
-            return baseTheme;
-        }
-
-        String themeName = "DarkTheme"; // default
-        if (baseTheme == R.style.LightTheme) {
-            themeName = "LightTheme";
-        } else if (baseTheme == R.style.BlackTheme) {
-            themeName = "BlackTheme";
-        }
-
-        themeName += "." + service.getServiceInfo().getName();
-        final int resourceId = getThemeOrDefault(themeName, baseTheme);
-
-        if (resourceId > 0) {
-            return resourceId;
-        }
-        return baseTheme;
+        // Tomoko Pixel theme is the definitive theme for the whole app
+        return R.style.Theme_Tomoko_Pixel;
     }
 
     @StyleRes
@@ -189,27 +143,8 @@ public final class ThemeHelper {
 
         final String selectedTheme = getSelectedThemeKey(context);
 
-        if (selectedTheme.equals(lightTheme)) {
-            return R.style.LightSettingsTheme;
-        } else if (selectedTheme.equals(blackTheme)) {
-            return R.style.BlackSettingsTheme;
-        } else if (selectedTheme.equals(automaticDeviceTheme)) {
-            if (isDeviceDarkThemeEnabled(context)) {
-                // use the dark theme variant preferred by the user
-                final String selectedNightTheme = getSelectedNightThemeKey(context);
-                if (selectedNightTheme.equals(blackTheme)) {
-                    return R.style.BlackSettingsTheme;
-                } else {
-                    return R.style.DarkSettingsTheme;
-                }
-            } else {
-                // there is only one day theme
-                return R.style.LightSettingsTheme;
-            }
-        } else {
-            // default to dark theme
-            return R.style.DarkSettingsTheme;
-        }
+        // Tomoko Pixel theme is the definitive theme for the whole app
+        return R.style.Theme_Tomoko_Pixel;
     }
 
     /**

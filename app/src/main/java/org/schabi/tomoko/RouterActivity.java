@@ -582,8 +582,7 @@ public class RouterActivity extends AppCompatActivity {
     }
 
     protected Context getThemeWrapperContext() {
-        return new ContextThemeWrapper(this, ThemeHelper.isLightThemeSelected(this)
-                ? R.style.LightTheme : R.style.DarkTheme);
+        return new ContextThemeWrapper(this, R.style.Theme_Tomoko_Pixel);
     }
 
     private void setDialogButtonsState(final AlertDialog dialog, final boolean state) {
