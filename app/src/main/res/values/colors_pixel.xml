@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Pixel-inspired colors for Tomoko -->
+    <!-- Primary - Deep Blue like Pixel -->
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorPrimaryVariant">#3F51B5</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary - Light Blue accent -->
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryDark">#01A89D</color>
+    <color name="colorSecondaryVariant">#81D4FA</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background - Pixel white -->
+    <color name="android:windowBackground">#FFFFFF</color>
+    <color name="background_color">#F7F9FC</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color onSurface>#212121</color>
+
+    <!-- App bar / Toolbar -->
+    <color name="toolbar_background">#FFFFFF</color>
+    <color name="toolbar_title">#212121</color>
+
+    <!-- Dividers / Separators -->
+    <color name="divider_color">#B0BEC5</color>
+    <color name="separator_color">#CFD8DC</color>
+
+    <!-- Status bar (Pixel blue on dark, or transparent) -->
+    <color name="status_bar_color">#212121</color>
+
+    <!-- Ripple effect -->
+    <color name="colorRipple">#99673AB7</color>
+
+    <!-- Selection background -->
+    <color name="selection_background">#E8EAF6</color>
+
+    <!-- Divider for dark theme -->
+    <color name="divider_color_dark">#455A64</color>
+    <color name="separator_color_dark">#607D8B</color>
+
+</resources>
