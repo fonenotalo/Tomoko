@@ -760,7 +760,7 @@ public abstract class Tab {
         private static String getMusicKioskId(final int serviceId) {
             try {
                 final StreamingService service = NewPipe.getService(serviceId);
-                final java.util.List<String> kiosks = service.getKioskList().getAvailableKiosks();
+                final java.util.Set<String> kiosks = service.getKioskList().getAvailableKiosks();
                 if (kiosks != null && kiosks.contains("trending_music")) {
                     return "trending_music";
                 }
