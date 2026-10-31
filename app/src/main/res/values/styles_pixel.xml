@@ -65,25 +65,27 @@
 
     </style>
 
-    <!-- Shape Appearance - Base -->
-    <style name="ShapeAppearance.Tomoko" />
+<!-- Shape Appearance - Base -->
+<style name="TomokoShapeAppearanceBase" />
 
-    <!-- Shape Appearance - Pixel style rounded corners -->
-    <style name="ShapeAppearance.Tomoko.SmallComponent" parent="ShapeAppearance.Tomoko">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">4dp</item>
-    </style>
+<!-- Shape Appearance - Pixel style rounded corners -->
+<style name="ShapeAppearance.Tomoko.SmallComponent"
+    parent="TomokoShapeAppearanceBase">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">4dp</item>
+</style>
 
-    <style name="ShapeAppearance.Tomoko.MediumComponent" parent="ShapeAppearance.Tomoko">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">12dp</item>
-    </style>
+<style name="ShapeAppearance.Tomoko.MediumComponent"
+    parent="TomokoShapeAppearanceBase">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">12dp</item>
+</style>
 
-    <style name="ShapeAppearance.Tomoko.LargeComponent" parent="ShapeAppearance.Tomoko">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">16dp</item>
-    </style>
-
+<style name="ShapeAppearance.Tomoko.LargeComponent"
+    parent="TomokoShapeAppearanceBase">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">16dp</item>
+</style>
     <!-- Typography - Google Sans inspired -->
 
     <style name="TextAppearance.Tomoko.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
