@@ -21,8 +21,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.error.ErrorUtil;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.StreamingService;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.StreamingService;
 import org.coffe.tomoko.util.KioskTranslator;
 import org.coffe.tomoko.util.ServiceHelper;
 import org.coffe.tomoko.util.ThemeHelper;

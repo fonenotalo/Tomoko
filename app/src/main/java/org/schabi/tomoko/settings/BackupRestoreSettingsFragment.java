@@ -1,6 +1,6 @@
 package org.coffe.tomoko.settings;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isBlank;
+import static org.schabi.newpipe.extractor.utils.Utils.isBlank;
 
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -5,7 +5,7 @@ import com.xwray.groupie.viewbinding.BindableItem
 import com.xwray.groupie.viewbinding.GroupieViewHolder
 import org.coffe.tomoko.R
 import org.coffe.tomoko.databinding.ItemStreamSegmentBinding
-import org.coffe.tomoko.extractor.stream.StreamSegment
+import org.schabi.newpipe.extractor.stream.StreamSegment
 import org.coffe.tomoko.util.Localization
 import org.coffe.tomoko.util.image.CoilHelper
 

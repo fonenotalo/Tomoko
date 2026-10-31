@@ -24,9 +24,9 @@ import com.google.android.exoplayer2.upstream.cache.LeastRecentlyUsedCacheEvicto
 import com.google.android.exoplayer2.upstream.cache.SimpleCache;
 
 import org.coffe.tomoko.DownloaderImpl;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.YoutubeOtfDashManifestCreator;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.YoutubePostLiveStreamDvrDashManifestCreator;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.YoutubeProgressiveDashManifestCreator;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeOtfDashManifestCreator;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubePostLiveStreamDvrDashManifestCreator;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeProgressiveDashManifestCreator;
 import org.coffe.tomoko.player.datasource.NonUriHlsDataSourceFactory;
 import org.coffe.tomoko.player.datasource.YoutubeHttpDataSource;
 

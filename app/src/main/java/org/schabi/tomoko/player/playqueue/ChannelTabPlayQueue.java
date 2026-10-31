@@ -1,10 +1,10 @@
 package org.coffe.tomoko.player.playqueue;
 
 
-import org.coffe.tomoko.extractor.Page;
-import org.coffe.tomoko.extractor.channel.tabs.ChannelTabInfo;
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.Page;
+import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo;
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.util.ExtractorHelper;
 
 import java.util.Collections;

@@ -12,9 +12,9 @@ import static com.google.android.exoplayer2.upstream.DefaultHttpDataSource.DEFAU
 import static com.google.android.exoplayer2.upstream.HttpUtil.buildRangeRequestHeader;
 import static com.google.android.exoplayer2.util.Assertions.checkNotNull;
 import static com.google.android.exoplayer2.util.Util.castNonNull;
-import static org.coffe.tomoko.extractor.services.youtube.YoutubeParsingHelper.getVisionOsUserAgent;
-import static org.coffe.tomoko.extractor.services.youtube.YoutubeParsingHelper.isVisionOsStreamingUrl;
-import static org.coffe.tomoko.extractor.services.youtube.YoutubeParsingHelper.isWebStreamingUrl;
+import static org.schabi.newpipe.extractor.services.youtube.YoutubeParsingHelper.getVisionOsUserAgent;
+import static org.schabi.newpipe.extractor.services.youtube.YoutubeParsingHelper.isVisionOsStreamingUrl;
+import static org.schabi.newpipe.extractor.services.youtube.YoutubeParsingHelper.isWebStreamingUrl;
 import static java.lang.Math.min;
 
 import android.net.Uri;

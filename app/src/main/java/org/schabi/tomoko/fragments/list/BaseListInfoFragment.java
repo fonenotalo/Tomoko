@@ -1,6 +1,6 @@
 package org.coffe.tomoko.fragments.list;
 
-import static org.coffe.tomoko.extractor.ServiceList.SoundCloud;
+import static org.schabi.newpipe.extractor.ServiceList.SoundCloud;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -15,11 +15,11 @@ import com.evernote.android.state.State;
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.ListExtractor;
-import org.coffe.tomoko.extractor.ListInfo;
-import org.coffe.tomoko.extractor.Page;
-import org.coffe.tomoko.extractor.exceptions.ContentNotSupportedException;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.ListExtractor;
+import org.schabi.newpipe.extractor.ListInfo;
+import org.schabi.newpipe.extractor.Page;
+import org.schabi.newpipe.extractor.exceptions.ContentNotSupportedException;
 import org.coffe.tomoko.util.Constants;
 import org.coffe.tomoko.views.NewPipeRecyclerView;
 

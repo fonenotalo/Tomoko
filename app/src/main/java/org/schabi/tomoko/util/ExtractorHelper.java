@@ -19,7 +19,7 @@
 
 package org.coffe.tomoko.util;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty;
+import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 import static org.coffe.tomoko.util.text.TextLinkifier.SET_LINK_MOVEMENT_METHOD;
 
 import android.content.Context;
@@ -34,23 +34,23 @@ import androidx.preference.PreferenceManager;
 
 import org.coffe.tomoko.MainActivity;
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.Info;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.ListExtractor.InfoItemsPage;
-import org.coffe.tomoko.extractor.MetaInfo;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.Page;
-import org.coffe.tomoko.extractor.channel.ChannelInfo;
-import org.coffe.tomoko.extractor.channel.tabs.ChannelTabInfo;
-import org.coffe.tomoko.extractor.comments.CommentsInfo;
-import org.coffe.tomoko.extractor.comments.CommentsInfoItem;
-import org.coffe.tomoko.extractor.kiosk.KioskInfo;
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler;
-import org.coffe.tomoko.extractor.playlist.PlaylistInfo;
-import org.coffe.tomoko.extractor.search.SearchInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
-import org.coffe.tomoko.extractor.suggestion.SuggestionExtractor;
+import org.schabi.newpipe.extractor.Info;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.ListExtractor.InfoItemsPage;
+import org.schabi.newpipe.extractor.MetaInfo;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.Page;
+import org.schabi.newpipe.extractor.channel.ChannelInfo;
+import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo;
+import org.schabi.newpipe.extractor.comments.CommentsInfo;
+import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
+import org.schabi.newpipe.extractor.kiosk.KioskInfo;
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
+import org.schabi.newpipe.extractor.playlist.PlaylistInfo;
+import org.schabi.newpipe.extractor.search.SearchInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.suggestion.SuggestionExtractor;
 import org.coffe.tomoko.util.text.TextLinkifier;
 
 import java.util.Collections;

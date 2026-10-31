@@ -5,7 +5,7 @@ import androidx.annotation.Nullable;
 
 import com.google.android.exoplayer2.source.MediaSource;
 
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.player.playqueue.PlayQueueItem;
 
 public interface PlaybackListener {

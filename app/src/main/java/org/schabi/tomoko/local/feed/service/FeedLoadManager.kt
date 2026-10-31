@@ -21,11 +21,11 @@ import org.coffe.tomoko.R
 import org.coffe.tomoko.database.feed.model.FeedGroupEntity
 import org.coffe.tomoko.database.subscription.NotificationMode
 import org.coffe.tomoko.database.subscription.SubscriptionEntity
-import org.coffe.tomoko.extractor.Info
-import org.coffe.tomoko.extractor.NewPipe
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.feed.FeedInfo
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.Info
+import org.schabi.newpipe.extractor.NewPipe
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.feed.FeedInfo
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.ktx.getStringSafe
 import org.coffe.tomoko.local.feed.FeedDatabaseManager
 import org.coffe.tomoko.local.subscription.SubscriptionManager

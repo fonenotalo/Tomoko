@@ -5,7 +5,7 @@ import com.facebook.stetho.Stetho
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import leakcanary.LeakCanary
 import okhttp3.OkHttpClient
-import org.coffe.tomoko.extractor.downloader.Downloader
+import org.schabi.newpipe.extractor.downloader.Downloader
 
 class DebugApp : App() {
     override fun onCreate() {

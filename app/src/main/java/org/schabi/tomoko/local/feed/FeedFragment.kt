@@ -63,10 +63,10 @@ import org.coffe.tomoko.databinding.FragmentFeedBinding
 import org.coffe.tomoko.error.ErrorInfo
 import org.coffe.tomoko.error.ErrorUtil
 import org.coffe.tomoko.error.UserAction
-import org.coffe.tomoko.extractor.exceptions.AccountTerminatedException
-import org.coffe.tomoko.extractor.exceptions.ContentNotAvailableException
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
-import org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty
+import org.schabi.newpipe.extractor.exceptions.AccountTerminatedException
+import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty
 import org.coffe.tomoko.fragments.BaseStateFragment
 import org.coffe.tomoko.info_list.ItemViewMode
 import org.coffe.tomoko.info_list.dialog.InfoItemDialog

@@ -11,8 +11,8 @@ import androidx.room3.Entity
 import androidx.room3.Ignore
 import androidx.room3.Index
 import androidx.room3.PrimaryKey
-import org.coffe.tomoko.extractor.channel.ChannelInfo
-import org.coffe.tomoko.extractor.channel.ChannelInfoItem
+import org.schabi.newpipe.extractor.channel.ChannelInfo
+import org.schabi.newpipe.extractor.channel.ChannelInfoItem
 import org.coffe.tomoko.util.NO_SERVICE_ID
 import org.coffe.tomoko.util.image.ImageStrategy
 

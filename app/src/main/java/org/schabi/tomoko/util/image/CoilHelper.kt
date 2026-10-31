@@ -20,7 +20,7 @@ import coil3.transform.Transformation
 import kotlin.math.min
 import org.coffe.tomoko.MainActivity
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.Image
+import org.schabi.newpipe.extractor.Image
 import org.coffe.tomoko.ktx.scale
 
 object CoilHelper {

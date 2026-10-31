@@ -1,6 +1,6 @@
 package org.coffe.tomoko.fragments.detail;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isBlank;
+import static org.schabi.newpipe.extractor.utils.Utils.isBlank;
 import static org.coffe.tomoko.util.text.TextLinkifier.SET_LINK_MOVEMENT_METHOD;
 
 import android.graphics.Typeface;
@@ -28,9 +28,9 @@ import org.coffe.tomoko.R;
 import org.coffe.tomoko.databinding.FragmentDescriptionBinding;
 import org.coffe.tomoko.databinding.ItemMetadataBinding;
 import org.coffe.tomoko.databinding.ItemMetadataTagsBinding;
-import org.coffe.tomoko.extractor.Image;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.stream.Description;
+import org.schabi.newpipe.extractor.Image;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.stream.Description;
 import org.coffe.tomoko.util.NavigationHelper;
 import org.coffe.tomoko.util.external_communication.ShareUtils;
 import org.coffe.tomoko.util.image.ImageStrategy;

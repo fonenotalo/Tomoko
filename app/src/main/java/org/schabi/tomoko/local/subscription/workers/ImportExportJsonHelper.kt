@@ -25,7 +25,7 @@ import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.decodeFromStream
 import kotlinx.serialization.json.encodeToStream
-import org.coffe.tomoko.extractor.subscription.SubscriptionExtractor.InvalidSourceException
+import org.schabi.newpipe.extractor.subscription.SubscriptionExtractor.InvalidSourceException
 
 /**
  * A JSON implementation capable of importing and exporting subscriptions, it has the advantage

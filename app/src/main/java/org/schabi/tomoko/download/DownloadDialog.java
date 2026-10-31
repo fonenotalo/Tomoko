@@ -1,6 +1,6 @@
 package org.coffe.tomoko.download;
 
-import static org.coffe.tomoko.extractor.stream.DeliveryMethod.PROGRESSIVE_HTTP;
+import static org.schabi.newpipe.extractor.stream.DeliveryMethod.PROGRESSIVE_HTTP;
 import static org.coffe.tomoko.util.ListHelper.getStreamsOfSpecifiedDelivery;
 
 import android.app.Activity;
@@ -48,14 +48,14 @@ import org.coffe.tomoko.databinding.DownloadDialogBinding;
 import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.ErrorUtil;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.MediaFormat;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.localization.Localization;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.Stream;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.SubtitlesStream;
-import org.coffe.tomoko.extractor.stream.VideoStream;
+import org.schabi.newpipe.extractor.MediaFormat;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.localization.Localization;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.Stream;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.SubtitlesStream;
+import org.schabi.newpipe.extractor.stream.VideoStream;
 import org.coffe.tomoko.settings.NewPipeSettings;
 import org.coffe.tomoko.streams.io.NoFileManagerSafeGuard;
 import org.coffe.tomoko.streams.io.StoredDirectoryHelper;

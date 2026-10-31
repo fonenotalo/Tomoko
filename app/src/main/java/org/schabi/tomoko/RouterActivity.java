@@ -1,7 +1,7 @@
 package org.coffe.tomoko;
 
-import static org.coffe.tomoko.extractor.StreamingService.ServiceInfo.MediaCapability.AUDIO;
-import static org.coffe.tomoko.extractor.StreamingService.ServiceInfo.MediaCapability.VIDEO;
+import static org.schabi.newpipe.extractor.StreamingService.ServiceInfo.MediaCapability.AUDIO;
+import static org.schabi.newpipe.extractor.StreamingService.ServiceInfo.MediaCapability.VIDEO;
 
 import android.annotation.SuppressLint;
 import android.app.IntentService;
@@ -53,15 +53,15 @@ import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.ErrorUtil;
 import org.coffe.tomoko.error.ReCaptchaActivity;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.Info;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.StreamingService.LinkType;
-import org.coffe.tomoko.extractor.channel.ChannelInfo;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler;
-import org.coffe.tomoko.extractor.playlist.PlaylistInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.Info;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.StreamingService.LinkType;
+import org.schabi.newpipe.extractor.channel.ChannelInfo;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
+import org.schabi.newpipe.extractor.playlist.PlaylistInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.local.dialog.PlaylistDialog;
 import org.coffe.tomoko.player.PlayerType;
 import org.coffe.tomoko.player.helper.PlayerHelper;

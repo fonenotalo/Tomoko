@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.coffe.tomoko.util.StreamItemAdapter.StreamInfoWrapper;
 
 import java.io.Serializable;

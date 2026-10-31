@@ -2,7 +2,7 @@ package org.coffe.tomoko.streams.io;
 
 import static android.provider.DocumentsContract.Document.COLUMN_DISPLAY_NAME;
 import static android.provider.DocumentsContract.Root.COLUMN_DOCUMENT_ID;
-import static org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty;
+import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
 import android.content.ContentResolver;
 import android.content.Context;

@@ -1,8 +1,8 @@
 package org.coffe.tomoko.fragments.list.comments;
 
-import org.coffe.tomoko.extractor.ListInfo;
-import org.coffe.tomoko.extractor.comments.CommentsInfoItem;
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler;
+import org.schabi.newpipe.extractor.ListInfo;
+import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 
 import java.util.Collections;
 

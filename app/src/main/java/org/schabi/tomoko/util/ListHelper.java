@@ -1,6 +1,6 @@
 package org.coffe.tomoko.util;
 
-import static org.coffe.tomoko.extractor.ServiceList.YouTube;
+import static org.schabi.newpipe.extractor.ServiceList.YouTube;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -14,12 +14,12 @@ import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.MediaFormat;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.AudioTrackType;
-import org.coffe.tomoko.extractor.stream.DeliveryMethod;
-import org.coffe.tomoko.extractor.stream.Stream;
-import org.coffe.tomoko.extractor.stream.VideoStream;
+import org.schabi.newpipe.extractor.MediaFormat;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.AudioTrackType;
+import org.schabi.newpipe.extractor.stream.DeliveryMethod;
+import org.schabi.newpipe.extractor.stream.Stream;
+import org.schabi.newpipe.extractor.stream.VideoStream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -58,7 +58,7 @@ public final class ListHelper {
     /**
      * List of supported YouTube Itag ids.
      * The original order is kept.
-     * @see org.coffe.tomoko.extractor.services.youtube.ItagItem
+     * @see org.schabi.newpipe.extractor.services.youtube.ItagItem
      */
     private static final List<Integer> SUPPORTED_ITAG_IDS =
             List.of(

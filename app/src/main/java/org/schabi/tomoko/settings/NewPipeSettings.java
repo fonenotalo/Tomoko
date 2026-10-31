@@ -1,6 +1,6 @@
 package org.coffe.tomoko.settings;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty;
+import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -2,14 +2,14 @@ package us.shandian.giga.get;
 
 import android.util.Log;
 
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.DeliveryMethod;
-import org.coffe.tomoko.extractor.stream.StreamExtractor;
-import org.coffe.tomoko.extractor.stream.SubtitlesStream;
-import org.coffe.tomoko.extractor.stream.VideoStream;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.DeliveryMethod;
+import org.schabi.newpipe.extractor.stream.StreamExtractor;
+import org.schabi.newpipe.extractor.stream.SubtitlesStream;
+import org.schabi.newpipe.extractor.stream.VideoStream;
 
 import java.io.IOException;
 import java.io.InterruptedIOException;

@@ -1,6 +1,6 @@
 package org.coffe.tomoko.util;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty;
+import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -14,8 +14,8 @@ import org.coffe.tomoko.database.stream.model.StreamEntity;
 import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.ErrorUtil;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.player.playqueue.SinglePlayQueue;
 
 import java.util.function.Consumer;
@@ -34,7 +34,7 @@ public final class SparseItemUtil {
     /**
      * Use this to certainly obtain an single play queue with all of the data filled in when the
      * stream info item you are handling might be sparse, e.g. because it was fetched via a {@link
-     * org.coffe.tomoko.extractor.feed.FeedExtractor}. FeedExtractors provide a fast and
+     * org.schabi.newpipe.extractor.feed.FeedExtractor}. FeedExtractors provide a fast and
      * lightweight method to fetch info, but the info might be incomplete (see
      * {@link org.coffe.tomoko.local.feed.service.FeedLoadService} for more details).
      *
@@ -42,7 +42,7 @@ public final class SparseItemUtil {
      * @param item     item which is checked and eventually loaded completely
      * @param callback callback to call with the single play queue built from the original item if
      *                 all info was available, otherwise from the fetched {@link
-     *                 org.coffe.tomoko.extractor.stream.StreamInfo}
+     *                 org.schabi.newpipe.extractor.stream.StreamInfo}
      */
     public static void fetchItemInfoIfSparse(@NonNull final Context context,
                                              @NonNull final StreamInfoItem item,
@@ -63,7 +63,7 @@ public final class SparseItemUtil {
     /**
      * Use this to certainly obtain an uploader url when the stream info item or play queue item you
      * are handling might not have the uploader url (e.g. because it was fetched with {@link
-     * org.coffe.tomoko.extractor.feed.FeedExtractor}). A toast is shown if loading details is
+     * org.schabi.newpipe.extractor.feed.FeedExtractor}). A toast is shown if loading details is
      * required.
      *
      * @param context     Android context
@@ -72,7 +72,7 @@ public final class SparseItemUtil {
      * @param uploaderUrl uploaderUrl of the item; if null or empty will be fetched
      * @param callback    callback to be called with either the original uploaderUrl, if it was a
      *                    valid url, otherwise with the uploader url obtained by fetching the {@link
-     *                    org.coffe.tomoko.extractor.stream.StreamInfo} corresponding to the item
+     *                    org.schabi.newpipe.extractor.stream.StreamInfo} corresponding to the item
      */
     public static void fetchUploaderUrlIfSparse(@NonNull final Context context,
                                                 final int serviceId,

@@ -1,9 +1,9 @@
 package org.coffe.tomoko.fragments.list.videos;
 
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.ListInfo;
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.ListInfo;
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 
 import java.util.ArrayList;
 import java.util.Collections;

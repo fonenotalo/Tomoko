@@ -6,8 +6,8 @@
 package org.coffe.tomoko.util.image
 
 import kotlin.math.abs
-import org.coffe.tomoko.extractor.Image
-import org.coffe.tomoko.extractor.Image.ResolutionLevel
+import org.schabi.newpipe.extractor.Image
+import org.schabi.newpipe.extractor.Image.ResolutionLevel
 
 object ImageStrategy {
     // when preferredImageQuality is LOW or MEDIUM, images are sorted by how close their preferred

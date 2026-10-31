@@ -1,6 +1,6 @@
 package org.coffe.tomoko.player.datasource;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty;
+import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
 import androidx.annotation.NonNull;
 

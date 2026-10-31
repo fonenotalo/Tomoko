@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.google.android.exoplayer2.Player.RepeatMode;
 
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.player.Player;
 import org.coffe.tomoko.player.helper.PlayerHelper;
 import org.coffe.tomoko.player.ui.PlayerUi;

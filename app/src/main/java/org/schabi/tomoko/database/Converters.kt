@@ -4,7 +4,7 @@ import androidx.room3.ColumnTypeConverter
 import java.time.Instant
 import java.time.OffsetDateTime
 import java.time.ZoneOffset
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.stream.StreamType
 import org.coffe.tomoko.local.subscription.FeedGroupIcon
 
 class Converters {

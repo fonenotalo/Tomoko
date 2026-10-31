@@ -32,9 +32,9 @@ import org.coffe.tomoko.database.playlist.model.PlaylistStreamEntity
 import org.coffe.tomoko.database.stream.StreamStatisticsEntry
 import org.coffe.tomoko.database.stream.model.StreamEntity
 import org.coffe.tomoko.database.stream.model.StreamStateEntity
-import org.coffe.tomoko.extractor.InfoItem
-import org.coffe.tomoko.extractor.stream.StreamInfo
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.InfoItem
+import org.schabi.newpipe.extractor.stream.StreamInfo
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.local.feed.FeedViewModel
 import org.coffe.tomoko.player.playqueue.PlayQueueItem
 import org.coffe.tomoko.util.ExtractorHelper

@@ -1,8 +1,8 @@
 package org.coffe.tomoko.player.playqueue;
 
-import org.coffe.tomoko.extractor.Page;
-import org.coffe.tomoko.extractor.playlist.PlaylistInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.Page;
+import org.schabi.newpipe.extractor.playlist.PlaylistInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.util.ExtractorHelper;
 
 import java.util.List;

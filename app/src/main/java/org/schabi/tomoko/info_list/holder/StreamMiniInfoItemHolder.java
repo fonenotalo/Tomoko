@@ -9,8 +9,8 @@ import androidx.core.content.ContextCompat;
 
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.database.stream.model.StreamStateEntity;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.info_list.InfoItemBuilder;
 import org.coffe.tomoko.ktx.ViewUtils;
 import org.coffe.tomoko.local.history.HistoryRecordManager;

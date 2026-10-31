@@ -48,7 +48,7 @@ import org.coffe.tomoko.databinding.LocalPlaylistHeaderBinding;
 import org.coffe.tomoko.databinding.PlaylistControlBinding;
 import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.fragments.MainFragment;
 import org.coffe.tomoko.fragments.list.playlist.PlaylistControlViewHolder;
 import org.coffe.tomoko.info_list.dialog.InfoItemDialog;

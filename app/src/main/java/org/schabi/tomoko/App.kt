@@ -28,9 +28,9 @@ import org.acra.ACRA.init
 import org.acra.ACRA.isACRASenderServiceProcess
 import org.acra.config.CoreConfigurationBuilder
 import org.coffe.tomoko.error.ReCaptchaActivity
-import org.coffe.tomoko.extractor.NewPipe
-import org.coffe.tomoko.extractor.downloader.Downloader
-import org.coffe.tomoko.extractor.services.youtube.extractors.YoutubeStreamExtractor
+import org.schabi.newpipe.extractor.NewPipe
+import org.schabi.newpipe.extractor.downloader.Downloader
+import org.schabi.newpipe.extractor.services.youtube.extractors.YoutubeStreamExtractor
 import org.coffe.tomoko.ktx.hasAssignableCause
 import org.coffe.tomoko.settings.NewPipeSettings
 import org.coffe.tomoko.util.BridgeStateSaverInitializer

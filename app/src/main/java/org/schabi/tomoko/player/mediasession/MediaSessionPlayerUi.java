@@ -20,7 +20,7 @@ import com.google.android.exoplayer2.Player.RepeatMode;
 import com.google.android.exoplayer2.ext.mediasession.MediaSessionConnector;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.player.Player;
 import org.coffe.tomoko.player.notification.NotificationActionData;
 import org.coffe.tomoko.player.notification.NotificationConstants;

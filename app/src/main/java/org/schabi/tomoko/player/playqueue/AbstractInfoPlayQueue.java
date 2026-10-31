@@ -5,11 +5,11 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.ListExtractor;
-import org.coffe.tomoko.extractor.ListInfo;
-import org.coffe.tomoko.extractor.Page;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.ListExtractor;
+import org.schabi.newpipe.extractor.ListInfo;
+import org.schabi.newpipe.extractor.Page;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 
 import java.util.List;
 import java.util.stream.Collectors;

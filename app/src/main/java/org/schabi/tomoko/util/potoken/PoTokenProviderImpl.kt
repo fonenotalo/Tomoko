@@ -5,11 +5,11 @@ import android.os.Looper
 import android.util.Log
 import org.coffe.tomoko.App
 import org.coffe.tomoko.BuildConfig
-import org.coffe.tomoko.extractor.NewPipe
-import org.coffe.tomoko.extractor.services.youtube.InnertubeClientRequestInfo
-import org.coffe.tomoko.extractor.services.youtube.PoTokenProvider
-import org.coffe.tomoko.extractor.services.youtube.PoTokenResult
-import org.coffe.tomoko.extractor.services.youtube.YoutubeParsingHelper
+import org.schabi.newpipe.extractor.NewPipe
+import org.schabi.newpipe.extractor.services.youtube.InnertubeClientRequestInfo
+import org.schabi.newpipe.extractor.services.youtube.PoTokenProvider
+import org.schabi.newpipe.extractor.services.youtube.PoTokenResult
+import org.schabi.newpipe.extractor.services.youtube.YoutubeParsingHelper
 import org.coffe.tomoko.util.DeviceUtils
 
 object PoTokenProviderImpl : PoTokenProvider {

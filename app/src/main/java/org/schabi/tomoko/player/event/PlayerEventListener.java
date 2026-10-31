@@ -2,7 +2,7 @@ package org.coffe.tomoko.player.event;
 
 import com.google.android.exoplayer2.PlaybackParameters;
 
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.player.playqueue.PlayQueue;
 
 public interface PlayerEventListener {

@@ -14,7 +14,7 @@ import java.time.OffsetDateTime
 import org.coffe.tomoko.database.BasicDAO
 import org.coffe.tomoko.database.stream.model.StreamEntity
 import org.coffe.tomoko.database.stream.model.StreamEntity.Companion.STREAM_ID
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.stream.StreamType
 import org.coffe.tomoko.util.StreamTypeUtil
 
 @Dao

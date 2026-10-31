@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.coffe.tomoko.database.AppDatabase;
 import org.coffe.tomoko.database.feed.model.FeedGroupEntity;
 import org.coffe.tomoko.database.subscription.SubscriptionEntity;
-import org.coffe.tomoko.extractor.channel.ChannelInfo;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.channel.ChannelInfo;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.coffe.tomoko.testUtil.TestDatabase;
 import org.coffe.tomoko.testUtil.TrampolineSchedulerRule;
 

@@ -18,8 +18,8 @@ import org.coffe.tomoko.database.feed.model.FeedLastUpdatedEntity
 import org.coffe.tomoko.database.stream.StreamWithState
 import org.coffe.tomoko.database.stream.model.StreamEntity
 import org.coffe.tomoko.database.subscription.NotificationMode
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.stream.StreamType
 import org.coffe.tomoko.local.subscription.FeedGroupIcon
 
 class FeedDatabaseManager(context: Context) {

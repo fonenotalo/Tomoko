@@ -15,7 +15,7 @@ import androidx.preference.Preference;
 
 import org.coffe.tomoko.DownloaderImpl;
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.NewPipe;
+import org.schabi.newpipe.extractor.NewPipe;
 import org.coffe.tomoko.player.helper.PlayerHelper;
 import org.coffe.tomoko.util.Localization;
 import org.coffe.tomoko.util.image.ImageStrategy;

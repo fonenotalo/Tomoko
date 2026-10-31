@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.ListExtractor;
-import org.coffe.tomoko.extractor.comments.CommentsInfo;
-import org.coffe.tomoko.extractor.comments.CommentsInfoItem;
+import org.schabi.newpipe.extractor.ListExtractor;
+import org.schabi.newpipe.extractor.comments.CommentsInfo;
+import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
 import org.coffe.tomoko.fragments.list.BaseListInfoFragment;
 import org.coffe.tomoko.info_list.ItemViewMode;
 import org.coffe.tomoko.ktx.ViewUtils;

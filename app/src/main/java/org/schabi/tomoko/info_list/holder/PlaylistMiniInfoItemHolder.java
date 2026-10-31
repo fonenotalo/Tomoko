@@ -5,8 +5,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.playlist.PlaylistInfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem;
 import org.coffe.tomoko.info_list.InfoItemBuilder;
 import org.coffe.tomoko.local.history.HistoryRecordManager;
 import org.coffe.tomoko.util.Localization;

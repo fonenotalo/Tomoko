@@ -8,7 +8,7 @@ import android.util.Pair;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.streams.WebMReader.Cluster;
 import org.coffe.tomoko.streams.WebMReader.Segment;
 import org.coffe.tomoko.streams.WebMReader.SimpleBlock;

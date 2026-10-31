@@ -1,6 +1,6 @@
 package org.coffe.tomoko.local.subscription;
 
-import static org.coffe.tomoko.extractor.subscription.SubscriptionExtractor.ContentSource.CHANNEL_URL;
+import static org.schabi.newpipe.extractor.subscription.SubscriptionExtractor.ContentSource.CHANNEL_URL;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,9 +30,9 @@ import org.coffe.tomoko.R;
 import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.ErrorUtil;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
-import org.coffe.tomoko.extractor.subscription.SubscriptionExtractor;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.subscription.SubscriptionExtractor;
 import org.coffe.tomoko.local.subscription.workers.SubscriptionImportInput;
 import org.coffe.tomoko.streams.io.NoFileManagerSafeGuard;
 import org.coffe.tomoko.streams.io.StoredFileHelper;

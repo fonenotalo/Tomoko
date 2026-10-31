@@ -6,10 +6,10 @@
 package org.coffe.tomoko.info_list
 
 import android.content.Context
-import org.coffe.tomoko.extractor.channel.ChannelInfoItem
-import org.coffe.tomoko.extractor.comments.CommentsInfoItem
-import org.coffe.tomoko.extractor.playlist.PlaylistInfoItem
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.channel.ChannelInfoItem
+import org.schabi.newpipe.extractor.comments.CommentsInfoItem
+import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.util.OnClickGesture
 
 class InfoItemBuilder(val context: Context) {

@@ -10,10 +10,10 @@ import java.time.OffsetDateTime
 import org.coffe.tomoko.database.stream.model.StreamEntity.Companion.STREAM_SERVICE_ID
 import org.coffe.tomoko.database.stream.model.StreamEntity.Companion.STREAM_TABLE
 import org.coffe.tomoko.database.stream.model.StreamEntity.Companion.STREAM_URL
-import org.coffe.tomoko.extractor.localization.DateWrapper
-import org.coffe.tomoko.extractor.stream.StreamInfo
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.localization.DateWrapper
+import org.schabi.newpipe.extractor.stream.StreamInfo
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.stream.StreamType
 import org.coffe.tomoko.player.playqueue.PlayQueueItem
 import org.coffe.tomoko.util.image.ImageStrategy
 

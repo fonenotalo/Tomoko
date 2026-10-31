@@ -12,7 +12,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceManager;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.ServiceList;
+import org.schabi.newpipe.extractor.ServiceList;
 
 /**
  * Util class that provides methods which are related to the Kodi Media Center and its Kore app.

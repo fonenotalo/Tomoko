@@ -30,8 +30,8 @@ import org.coffe.tomoko.databinding.FeedItemCarouselBinding
 import org.coffe.tomoko.databinding.FragmentSubscriptionBinding
 import org.coffe.tomoko.error.ErrorInfo
 import org.coffe.tomoko.error.UserAction
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.channel.ChannelInfoItem
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.channel.ChannelInfoItem
 import org.coffe.tomoko.fragments.BaseStateFragment
 import org.coffe.tomoko.ktx.animate
 import org.coffe.tomoko.local.subscription.SubscriptionViewModel.SubscriptionState

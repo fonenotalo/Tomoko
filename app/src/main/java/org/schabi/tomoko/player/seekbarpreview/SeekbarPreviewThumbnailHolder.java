@@ -14,7 +14,7 @@ import androidx.collection.SparseArrayCompat;
 import com.google.common.base.Stopwatch;
 
 import org.coffe.tomoko.App;
-import org.coffe.tomoko.extractor.stream.Frameset;
+import org.schabi.newpipe.extractor.stream.Frameset;
 import org.coffe.tomoko.util.image.CoilHelper;
 
 import java.util.Comparator;

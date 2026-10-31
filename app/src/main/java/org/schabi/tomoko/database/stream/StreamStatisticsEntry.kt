@@ -14,7 +14,7 @@ import org.coffe.tomoko.database.LocalItem
 import org.coffe.tomoko.database.history.model.StreamHistoryEntity
 import org.coffe.tomoko.database.stream.model.StreamEntity
 import org.coffe.tomoko.database.stream.model.StreamStateEntity.Companion.STREAM_PROGRESS_MILLIS
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.util.image.ImageStrategy
 
 data class StreamStatisticsEntry(

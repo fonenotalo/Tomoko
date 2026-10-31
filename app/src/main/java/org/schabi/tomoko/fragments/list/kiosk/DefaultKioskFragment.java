@@ -4,9 +4,9 @@ import android.os.Bundle;
 
 import org.coffe.tomoko.error.ErrorInfo;
 import org.coffe.tomoko.error.UserAction;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
-import org.coffe.tomoko.extractor.kiosk.KioskList;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.kiosk.KioskList;
 import org.coffe.tomoko.util.KioskTranslator;
 import org.coffe.tomoko.util.ServiceHelper;
 

@@ -15,7 +15,7 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.coffe.tomoko.extractor.stream.StreamSegment;
+import org.schabi.newpipe.extractor.stream.StreamSegment;
 
 import java.util.Collections;
 import java.util.List;

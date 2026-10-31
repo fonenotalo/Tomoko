@@ -12,8 +12,8 @@ import com.grack.nanojson.JsonObject
 import com.grack.nanojson.JsonParser
 import com.grack.nanojson.JsonWriter
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.services.peertube.PeertubeInstance
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.services.peertube.PeertubeInstance
 
 object PeertubeHelper {
 

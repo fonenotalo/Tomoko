@@ -2,9 +2,9 @@ package org.coffe.tomoko.local.feed.service
 
 import org.coffe.tomoko.database.subscription.NotificationMode
 import org.coffe.tomoko.database.subscription.SubscriptionEntity
-import org.coffe.tomoko.extractor.Info
-import org.coffe.tomoko.extractor.channel.ChannelInfo
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.Info
+import org.schabi.newpipe.extractor.channel.ChannelInfo
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.util.image.ImageStrategy
 
 /**

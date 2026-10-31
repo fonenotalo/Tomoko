@@ -7,10 +7,10 @@ import androidx.annotation.Nullable;
 import androidx.preference.PreferenceManager;
 
 import org.coffe.tomoko.error.ReCaptchaActivity;
-import org.coffe.tomoko.extractor.downloader.Downloader;
-import org.coffe.tomoko.extractor.downloader.Request;
-import org.coffe.tomoko.extractor.downloader.Response;
-import org.coffe.tomoko.extractor.exceptions.ReCaptchaException;
+import org.schabi.newpipe.extractor.downloader.Downloader;
+import org.schabi.newpipe.extractor.downloader.Request;
+import org.schabi.newpipe.extractor.downloader.Response;
+import org.schabi.newpipe.extractor.exceptions.ReCaptchaException;
 import org.coffe.tomoko.util.InfoCache;
 
 import java.io.IOException;

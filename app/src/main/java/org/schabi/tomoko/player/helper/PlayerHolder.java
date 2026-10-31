@@ -15,7 +15,7 @@ import com.google.android.exoplayer2.PlaybackParameters;
 
 import org.coffe.tomoko.App;
 import org.coffe.tomoko.MainActivity;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.player.PlayerService;
 import org.coffe.tomoko.player.Player;
 import org.coffe.tomoko.player.PlayerType;

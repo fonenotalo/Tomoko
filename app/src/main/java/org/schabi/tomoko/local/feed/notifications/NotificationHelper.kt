@@ -17,7 +17,7 @@ import androidx.core.content.getSystemService
 import androidx.core.net.toUri
 import androidx.preference.PreferenceManager
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.local.feed.service.FeedUpdateInfo
 import org.coffe.tomoko.util.NavigationHelper
 import org.coffe.tomoko.util.image.CoilHelper

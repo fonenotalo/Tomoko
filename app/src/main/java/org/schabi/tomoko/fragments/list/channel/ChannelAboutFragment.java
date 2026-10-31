@@ -1,6 +1,6 @@
 package org.coffe.tomoko.fragments.list.channel;
 
-import static org.coffe.tomoko.extractor.stream.StreamExtractor.UNKNOWN_SUBSCRIBER_COUNT;
+import static org.schabi.newpipe.extractor.stream.StreamExtractor.UNKNOWN_SUBSCRIBER_COUNT;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,9 +13,9 @@ import androidx.annotation.Nullable;
 import com.evernote.android.state.State;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.channel.ChannelInfo;
-import org.coffe.tomoko.extractor.stream.Description;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.channel.ChannelInfo;
+import org.schabi.newpipe.extractor.stream.Description;
 import org.coffe.tomoko.fragments.detail.BaseDescriptionFragment;
 import org.coffe.tomoko.util.DeviceUtils;
 import org.coffe.tomoko.util.Localization;

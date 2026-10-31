@@ -25,7 +25,7 @@ import androidx.core.content.FileProvider;
 import org.coffe.tomoko.BuildConfig;
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.RouterActivity;
-import org.coffe.tomoko.extractor.Image;
+import org.schabi.newpipe.extractor.Image;
 import org.coffe.tomoko.util.image.ImageStrategy;
 
 import java.nio.file.Files;

@@ -1,6 +1,6 @@
 package org.coffe.tomoko.util;
 
-import static org.coffe.tomoko.extractor.utils.Utils.isNullOrEmpty;
+import static org.schabi.newpipe.extractor.utils.Utils.isNullOrEmpty;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -18,13 +18,13 @@ import androidx.collection.SparseArrayCompat;
 
 import org.coffe.tomoko.DownloaderImpl;
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.MediaFormat;
-import org.coffe.tomoko.extractor.downloader.Response;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.Stream;
-import org.coffe.tomoko.extractor.stream.SubtitlesStream;
-import org.coffe.tomoko.extractor.stream.VideoStream;
-import org.coffe.tomoko.extractor.utils.Utils;
+import org.schabi.newpipe.extractor.MediaFormat;
+import org.schabi.newpipe.extractor.downloader.Response;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.Stream;
+import org.schabi.newpipe.extractor.stream.SubtitlesStream;
+import org.schabi.newpipe.extractor.stream.VideoStream;
+import org.schabi.newpipe.extractor.utils.Utils;
 
 import java.io.Serializable;
 import java.util.Arrays;

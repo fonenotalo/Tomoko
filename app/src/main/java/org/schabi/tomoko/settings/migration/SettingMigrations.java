@@ -1,8 +1,8 @@
 package org.coffe.tomoko.settings.migration;
 
 import static org.coffe.tomoko.MainActivity.DEBUG;
-import static org.coffe.tomoko.extractor.ServiceList.SoundCloud;
-import static org.coffe.tomoko.extractor.ServiceList.YouTube;
+import static org.schabi.newpipe.extractor.ServiceList.SoundCloud;
+import static org.schabi.newpipe.extractor.ServiceList.YouTube;
 
 import android.content.Context;
 import android.content.SharedPreferences;

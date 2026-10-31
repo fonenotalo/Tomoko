@@ -17,7 +17,7 @@ import org.coffe.tomoko.database.playlist.PlaylistLocalItem
 import org.coffe.tomoko.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_SERVICE_ID
 import org.coffe.tomoko.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_TABLE
 import org.coffe.tomoko.database.playlist.model.PlaylistRemoteEntity.Companion.REMOTE_PLAYLIST_URL
-import org.coffe.tomoko.extractor.playlist.PlaylistInfo
+import org.schabi.newpipe.extractor.playlist.PlaylistInfo
 import org.coffe.tomoko.util.NO_SERVICE_ID
 import org.coffe.tomoko.util.image.ImageStrategy
 

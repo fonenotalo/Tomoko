@@ -4,7 +4,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import org.coffe.tomoko.extractor.subscription.SubscriptionExtractor;
+import org.schabi.newpipe.extractor.subscription.SubscriptionExtractor;
 import org.coffe.tomoko.local.subscription.workers.ImportExportJsonHelper;
 import org.coffe.tomoko.local.subscription.workers.SubscriptionItem;
 

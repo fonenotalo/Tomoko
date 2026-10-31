@@ -3,8 +3,8 @@ package org.coffe.tomoko.player.playqueue;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
-import org.coffe.tomoko.extractor.stream.StreamType;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.stream.StreamType;
 
 import java.util.ArrayList;
 import java.util.Collections;

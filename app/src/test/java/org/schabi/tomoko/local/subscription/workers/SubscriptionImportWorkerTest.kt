@@ -12,8 +12,8 @@ import org.mockito.Mockito
 import org.mockito.Mockito.`when`
 import org.mockito.Mockito.withSettings
 import org.mockito.junit.MockitoJUnitRunner
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.subscription.SubscriptionItem as ExtractorSubscriptionItem
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.subscription.SubscriptionItem as ExtractorSubscriptionItem
 import org.coffe.tomoko.streams.io.StoredFileHelper
 
 @RunWith(MockitoJUnitRunner::class)

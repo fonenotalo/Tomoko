@@ -21,8 +21,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.error.ErrorUtil;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.fragments.BaseStateFragment;
 import org.coffe.tomoko.fragments.OnScrollBelowItemsListener;
 import org.coffe.tomoko.info_list.InfoListAdapter;

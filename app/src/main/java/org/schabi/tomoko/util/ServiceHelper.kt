@@ -13,10 +13,10 @@ import androidx.preference.PreferenceManager
 import com.grack.nanojson.JsonParser
 import java.util.concurrent.TimeUnit
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.NewPipe
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.StreamingService
-import org.coffe.tomoko.extractor.services.peertube.PeertubeInstance
+import org.schabi.newpipe.extractor.NewPipe
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.StreamingService
+import org.schabi.newpipe.extractor.services.peertube.PeertubeInstance
 import org.coffe.tomoko.ktx.getStringSafe
 
 object ServiceHelper {

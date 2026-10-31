@@ -1,8 +1,8 @@
 package org.coffe.tomoko.player.mediabrowser
 
 import org.coffe.tomoko.BuildConfig
-import org.coffe.tomoko.extractor.InfoItem.InfoType
-import org.coffe.tomoko.extractor.exceptions.ContentNotAvailableException
+import org.schabi.newpipe.extractor.InfoItem.InfoType
+import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
 
 internal const val ID_AUTHORITY = BuildConfig.APPLICATION_ID
 internal const val ID_ROOT = "//$ID_AUTHORITY"

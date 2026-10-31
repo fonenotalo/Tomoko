@@ -33,7 +33,7 @@ import org.coffe.tomoko.R;
 import org.coffe.tomoko.databinding.DialogEditTextBinding;
 import org.coffe.tomoko.databinding.FragmentInstanceListBinding;
 import org.coffe.tomoko.databinding.ItemInstanceBinding;
-import org.coffe.tomoko.extractor.services.peertube.PeertubeInstance;
+import org.schabi.newpipe.extractor.services.peertube.PeertubeInstance;
 import org.coffe.tomoko.util.Constants;
 import org.coffe.tomoko.util.PeertubeHelper;
 import org.coffe.tomoko.util.ThemeHelper;

@@ -11,7 +11,7 @@ import org.junit.Test
 import org.mockito.Mockito.mock
 import org.coffe.tomoko.database.playlist.PlaylistStreamEntry
 import org.coffe.tomoko.database.stream.model.StreamEntity
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.stream.StreamType
 import org.coffe.tomoko.local.playlist.PlayListShareMode.JUST_URLS
 import org.coffe.tomoko.local.playlist.PlayListShareMode.YOUTUBE_TEMP_PLAYLIST
 

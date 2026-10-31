@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.coffe.tomoko.extractor.InfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
 import org.coffe.tomoko.info_list.InfoItemBuilder;
 import org.coffe.tomoko.local.history.HistoryRecordManager;
 

@@ -1,10 +1,10 @@
 package org.coffe.tomoko.util;
 
 import org.junit.Test;
-import org.coffe.tomoko.extractor.MediaFormat;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.AudioTrackType;
-import org.coffe.tomoko.extractor.stream.VideoStream;
+import org.schabi.newpipe.extractor.MediaFormat;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.AudioTrackType;
+import org.schabi.newpipe.extractor.stream.VideoStream;
 
 import java.util.ArrayList;
 import java.util.Comparator;

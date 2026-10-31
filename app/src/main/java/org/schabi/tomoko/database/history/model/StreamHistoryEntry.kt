@@ -4,7 +4,7 @@ import androidx.room3.ColumnInfo
 import androidx.room3.Embedded
 import java.time.OffsetDateTime
 import org.coffe.tomoko.database.stream.model.StreamEntity
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.util.image.ImageStrategy
 
 data class StreamHistoryEntry(

@@ -12,9 +12,9 @@ import org.coffe.tomoko.database.stream.model.StreamEntity
 import org.coffe.tomoko.database.subscription.NotificationMode
 import org.coffe.tomoko.database.subscription.SubscriptionDAO
 import org.coffe.tomoko.database.subscription.SubscriptionEntity
-import org.coffe.tomoko.extractor.channel.ChannelInfo
-import org.coffe.tomoko.extractor.channel.tabs.ChannelTabInfo
-import org.coffe.tomoko.extractor.stream.StreamInfoItem
+import org.schabi.newpipe.extractor.channel.ChannelInfo
+import org.schabi.newpipe.extractor.channel.tabs.ChannelTabInfo
+import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import org.coffe.tomoko.local.feed.FeedDatabaseManager
 import org.coffe.tomoko.local.feed.service.FeedUpdateInfo
 import org.coffe.tomoko.util.ExtractorHelper

@@ -6,7 +6,7 @@ import android.widget.TextView
 import com.xwray.groupie.GroupieViewHolder
 import com.xwray.groupie.Item
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.channel.ChannelInfoItem
+import org.schabi.newpipe.extractor.channel.ChannelInfoItem
 import org.coffe.tomoko.util.Localization
 import org.coffe.tomoko.util.OnClickGesture
 import org.coffe.tomoko.util.image.CoilHelper

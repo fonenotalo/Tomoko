@@ -25,7 +25,7 @@ import androidx.annotation.Nullable;
 public class FailedMediaSource extends BaseMediaSource implements ManagedMediaSource {
     /**
      * Play 2 seconds of silenced audio when a stream fails to resolve due to a known issue,
-     * such as {@link org.coffe.tomoko.extractor.exceptions.ExtractionException}.
+     * such as {@link org.schabi.newpipe.extractor.exceptions.ExtractionException}.
      *
      * This silence duration allows user to react and have time to jump to a previous stream,
      * while still provide a smooth playback experience. A duration lower than 1 second is
@@ -92,7 +92,7 @@ public class FailedMediaSource extends BaseMediaSource implements ManagedMediaSo
     /**
      * Prepares the source with {@link Timeline} info on the silence playback when the error
      * is classed as {@link FailedMediaSourceException}, for example, when the error is
-     * {@link org.coffe.tomoko.extractor.exceptions.ExtractionException ExtractionException}.
+     * {@link org.schabi.newpipe.extractor.exceptions.ExtractionException ExtractionException}.
      * These types of error are swallowed by {@link FailedMediaSource}, and the underlying
      * exception is carried to the {@link MediaItem} metadata during playback.
      * <br><br>

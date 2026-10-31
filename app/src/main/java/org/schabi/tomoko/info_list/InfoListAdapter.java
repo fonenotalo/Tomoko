@@ -12,11 +12,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.coffe.tomoko.databinding.PignateFooterBinding;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.channel.ChannelInfoItem;
-import org.coffe.tomoko.extractor.comments.CommentsInfoItem;
-import org.coffe.tomoko.extractor.playlist.PlaylistInfoItem;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.channel.ChannelInfoItem;
+import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
+import org.schabi.newpipe.extractor.playlist.PlaylistInfoItem;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.coffe.tomoko.info_list.holder.ChannelCardInfoItemHolder;
 import org.coffe.tomoko.info_list.holder.ChannelGridInfoItemHolder;
 import org.coffe.tomoko.info_list.holder.ChannelInfoItemHolder;

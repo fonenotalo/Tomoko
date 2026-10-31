@@ -20,9 +20,9 @@ import org.coffe.tomoko.database.stream.dao.StreamDAO
 import org.coffe.tomoko.database.stream.model.StreamEntity
 import org.coffe.tomoko.database.subscription.SubscriptionDAO
 import org.coffe.tomoko.database.subscription.SubscriptionEntity
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.channel.ChannelInfo
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.channel.ChannelInfo
+import org.schabi.newpipe.extractor.stream.StreamType
 
 class FeedDAOTest {
     private lateinit var db: AppDatabase

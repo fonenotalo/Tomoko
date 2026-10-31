@@ -25,11 +25,11 @@ import androidx.preference.PreferenceManager;
 import org.ocpsoft.prettytime.PrettyTime;
 import org.ocpsoft.prettytime.units.Decade;
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.ListExtractor;
-import org.coffe.tomoko.extractor.localization.ContentCountry;
-import org.coffe.tomoko.extractor.localization.DateWrapper;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.AudioTrackType;
+import org.schabi.newpipe.extractor.ListExtractor;
+import org.schabi.newpipe.extractor.localization.ContentCountry;
+import org.schabi.newpipe.extractor.localization.DateWrapper;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.AudioTrackType;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -97,9 +97,9 @@ public final class Localization {
         return BidiFormatter.getInstance().unicodeWrap(plainName);
     }
 
-    public static org.coffe.tomoko.extractor.localization.Localization getPreferredLocalization(
+    public static org.schabi.newpipe.extractor.localization.Localization getPreferredLocalization(
             final Context context) {
-        return org.coffe.tomoko.extractor.localization.Localization
+        return org.schabi.newpipe.extractor.localization.Localization
                 .fromLocale(getPreferredLocale(context));
     }
 

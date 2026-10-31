@@ -1,6 +1,6 @@
 package org.coffe.tomoko.player.mediaitem;
 
-import org.coffe.tomoko.extractor.stream.StreamType;
+import org.schabi.newpipe.extractor.stream.StreamType;
 import org.coffe.tomoko.util.Constants;
 
 import java.util.Collections;

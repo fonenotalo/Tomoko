@@ -8,9 +8,9 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.channel.ChannelInfoItem;
-import org.coffe.tomoko.extractor.utils.Utils;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.channel.ChannelInfoItem;
+import org.schabi.newpipe.extractor.utils.Utils;
 import org.coffe.tomoko.info_list.InfoItemBuilder;
 import org.coffe.tomoko.local.history.HistoryRecordManager;
 import org.coffe.tomoko.util.Localization;

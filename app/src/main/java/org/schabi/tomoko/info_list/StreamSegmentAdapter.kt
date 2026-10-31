@@ -3,7 +3,7 @@ package org.coffe.tomoko.info_list
 import android.util.Log
 import com.xwray.groupie.GroupieAdapter
 import kotlin.math.max
-import org.coffe.tomoko.extractor.stream.StreamInfo
+import org.schabi.newpipe.extractor.stream.StreamInfo
 
 /**
  * Custom RecyclerView.Adapter/GroupieAdapter for [StreamSegmentItem] for handling selection state.

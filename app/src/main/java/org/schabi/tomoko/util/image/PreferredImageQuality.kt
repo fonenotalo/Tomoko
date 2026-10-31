@@ -7,7 +7,7 @@ package org.coffe.tomoko.util.image
 
 import android.content.Context
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.Image.ResolutionLevel
+import org.schabi.newpipe.extractor.Image.ResolutionLevel
 
 enum class PreferredImageQuality {
     NONE,

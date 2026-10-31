@@ -9,7 +9,7 @@ import androidx.collection.ArraySet;
 
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.coffe.tomoko.player.mediaitem.MediaItemTag;
 import org.coffe.tomoko.player.mediasource.FailedMediaSource;
 import org.coffe.tomoko.player.mediasource.LoadedMediaSource;

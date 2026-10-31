@@ -20,9 +20,9 @@ import org.coffe.tomoko.MainActivity
 import org.coffe.tomoko.NewPipeDatabase
 import org.coffe.tomoko.R
 import org.coffe.tomoko.error.ErrorInfo
-import org.coffe.tomoko.extractor.InfoItem.InfoType
-import org.coffe.tomoko.extractor.exceptions.ContentNotAvailableException
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler
+import org.schabi.newpipe.extractor.InfoItem.InfoType
+import org.schabi.newpipe.extractor.exceptions.ContentNotAvailableException
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler
 import org.coffe.tomoko.local.playlist.LocalPlaylistManager
 import org.coffe.tomoko.local.playlist.RemotePlaylistManager
 import org.coffe.tomoko.player.playqueue.ChannelTabPlayQueue

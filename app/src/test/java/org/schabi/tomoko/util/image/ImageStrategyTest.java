@@ -1,14 +1,14 @@
 package org.coffe.tomoko.util.image;
 
 import static org.junit.Assert.assertEquals;
-import static org.coffe.tomoko.extractor.Image.HEIGHT_UNKNOWN;
-import static org.coffe.tomoko.extractor.Image.WIDTH_UNKNOWN;
+import static org.schabi.newpipe.extractor.Image.HEIGHT_UNKNOWN;
+import static org.schabi.newpipe.extractor.Image.WIDTH_UNKNOWN;
 import static org.coffe.tomoko.util.image.ImageStrategy.choosePreferredImage;
 import static org.coffe.tomoko.util.image.ImageStrategy.estimatePixelCount;
 
 import org.junit.Test;
-import org.coffe.tomoko.extractor.Image;
-import org.coffe.tomoko.extractor.Image.ResolutionLevel;
+import org.schabi.newpipe.extractor.Image;
+import org.schabi.newpipe.extractor.Image.ResolutionLevel;
 
 import java.util.List;
 

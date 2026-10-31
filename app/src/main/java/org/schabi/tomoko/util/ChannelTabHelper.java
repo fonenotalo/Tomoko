@@ -6,8 +6,8 @@ import android.content.SharedPreferences;
 import androidx.annotation.StringRes;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.channel.tabs.ChannelTabs;
-import org.coffe.tomoko.extractor.linkhandler.ListLinkHandler;
+import org.schabi.newpipe.extractor.channel.tabs.ChannelTabs;
+import org.schabi.newpipe.extractor.linkhandler.ListLinkHandler;
 
 import java.util.List;
 import java.util.Set;

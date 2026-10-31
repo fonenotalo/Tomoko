@@ -3,11 +3,11 @@ package us.shandian.giga.get
 import android.os.Parcelable
 import java.io.Serializable
 import kotlinx.parcelize.Parcelize
-import org.coffe.tomoko.extractor.MediaFormat
-import org.coffe.tomoko.extractor.stream.AudioStream
-import org.coffe.tomoko.extractor.stream.Stream
-import org.coffe.tomoko.extractor.stream.SubtitlesStream
-import org.coffe.tomoko.extractor.stream.VideoStream
+import org.schabi.newpipe.extractor.MediaFormat
+import org.schabi.newpipe.extractor.stream.AudioStream
+import org.schabi.newpipe.extractor.stream.Stream
+import org.schabi.newpipe.extractor.stream.SubtitlesStream
+import org.schabi.newpipe.extractor.stream.VideoStream
 
 @Parcelize
 class MissionRecoveryInfo(

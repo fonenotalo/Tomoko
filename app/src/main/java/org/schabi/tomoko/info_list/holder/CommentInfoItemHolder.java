@@ -19,8 +19,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.comments.CommentsInfoItem;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.comments.CommentsInfoItem;
 import org.coffe.tomoko.info_list.InfoItemBuilder;
 import org.coffe.tomoko.local.history.HistoryRecordManager;
 import org.coffe.tomoko.util.DeviceUtils;

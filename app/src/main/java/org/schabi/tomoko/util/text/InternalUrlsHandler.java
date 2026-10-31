@@ -5,11 +5,11 @@ import android.content.Intent;
 import androidx.core.content.ContextCompat;
 
 import androidx.annotation.NonNull;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
-import org.coffe.tomoko.extractor.exceptions.ParsingException;
-import org.coffe.tomoko.extractor.linkhandler.LinkHandlerFactory;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.exceptions.ParsingException;
+import org.schabi.newpipe.extractor.linkhandler.LinkHandlerFactory;
 import org.coffe.tomoko.player.TimestampChangeData;
 import org.coffe.tomoko.util.NavigationHelper;
 

@@ -8,8 +8,8 @@ package org.coffe.tomoko.util.text
 import android.content.Context
 import android.view.View
 import io.reactivex.rxjava3.disposables.CompositeDisposable
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.StreamingService
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.StreamingService
 import org.coffe.tomoko.util.external_communication.ShareUtils
 import org.coffe.tomoko.util.text.TimestampExtractor.TimestampMatchDTO
 

@@ -6,7 +6,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.coffe.tomoko.database.AppDatabase
 import org.coffe.tomoko.database.stream.model.StreamEntity
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.stream.StreamType
 import org.coffe.tomoko.testUtil.TestDatabase
 import org.coffe.tomoko.testUtil.TrampolineSchedulerRule
 

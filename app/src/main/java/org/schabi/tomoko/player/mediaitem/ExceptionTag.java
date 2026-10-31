@@ -1,7 +1,7 @@
 package org.coffe.tomoko.player.mediaitem;
 
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.StreamType;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamType;
 import org.coffe.tomoko.player.playqueue.PlayQueueItem;
 import org.coffe.tomoko.util.image.ImageStrategy;
 

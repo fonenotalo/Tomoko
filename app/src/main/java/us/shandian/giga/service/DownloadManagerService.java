@@ -40,7 +40,7 @@ import androidx.preference.PreferenceManager;
 
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.download.DownloadActivity;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.player.helper.LockManager;
 import org.coffe.tomoko.streams.io.StoredDirectoryHelper;
 import org.coffe.tomoko.streams.io.StoredFileHelper;

@@ -1,7 +1,7 @@
 package org.coffe.tomoko.player.resolver;
 
-import static org.coffe.tomoko.extractor.stream.AudioStream.UNKNOWN_BITRATE;
-import static org.coffe.tomoko.extractor.stream.VideoStream.RESOLUTION_UNKNOWN;
+import static org.schabi.newpipe.extractor.stream.AudioStream.UNKNOWN_BITRATE;
+import static org.schabi.newpipe.extractor.stream.VideoStream.RESOLUTION_UNKNOWN;
 import static org.coffe.tomoko.player.helper.PlayerDataSource.LIVE_STREAM_EDGE_GAP_MILLIS;
 
 import android.net.Uri;
@@ -21,19 +21,19 @@ import com.google.android.exoplayer2.source.smoothstreaming.SsMediaSource;
 import com.google.android.exoplayer2.source.smoothstreaming.manifest.SsManifest;
 import com.google.android.exoplayer2.source.smoothstreaming.manifest.SsManifestParser;
 
-import org.coffe.tomoko.extractor.MediaFormat;
-import org.coffe.tomoko.extractor.ServiceList;
-import org.coffe.tomoko.extractor.services.youtube.ItagItem;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.CreationException;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.YoutubeOtfDashManifestCreator;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.YoutubePostLiveStreamDvrDashManifestCreator;
-import org.coffe.tomoko.extractor.services.youtube.dashmanifestcreators.YoutubeProgressiveDashManifestCreator;
-import org.coffe.tomoko.extractor.stream.AudioStream;
-import org.coffe.tomoko.extractor.stream.DeliveryMethod;
-import org.coffe.tomoko.extractor.stream.Stream;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.StreamType;
-import org.coffe.tomoko.extractor.stream.VideoStream;
+import org.schabi.newpipe.extractor.MediaFormat;
+import org.schabi.newpipe.extractor.ServiceList;
+import org.schabi.newpipe.extractor.services.youtube.ItagItem;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.CreationException;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeOtfDashManifestCreator;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubePostLiveStreamDvrDashManifestCreator;
+import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeProgressiveDashManifestCreator;
+import org.schabi.newpipe.extractor.stream.AudioStream;
+import org.schabi.newpipe.extractor.stream.DeliveryMethod;
+import org.schabi.newpipe.extractor.stream.Stream;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamType;
+import org.schabi.newpipe.extractor.stream.VideoStream;
 import org.coffe.tomoko.player.datasource.NonUriHlsDataSourceFactory;
 import org.coffe.tomoko.player.helper.PlayerDataSource;
 import org.coffe.tomoko.player.mediaitem.MediaItemTag;

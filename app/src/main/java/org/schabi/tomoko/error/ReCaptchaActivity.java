@@ -24,7 +24,7 @@ import org.coffe.tomoko.DownloaderImpl;
 import org.coffe.tomoko.MainActivity;
 import org.coffe.tomoko.R;
 import org.coffe.tomoko.databinding.ActivityRecaptchaBinding;
-import org.coffe.tomoko.extractor.utils.Utils;
+import org.schabi.newpipe.extractor.utils.Utils;
 import org.coffe.tomoko.util.ThemeHelper;
 
 /*

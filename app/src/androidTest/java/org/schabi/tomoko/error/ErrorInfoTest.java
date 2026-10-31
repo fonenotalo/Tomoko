@@ -8,8 +8,8 @@ import androidx.test.filters.LargeTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.ServiceList;
-import org.coffe.tomoko.extractor.exceptions.ParsingException;
+import org.schabi.newpipe.extractor.ServiceList;
+import org.schabi.newpipe.extractor.exceptions.ParsingException;
 
 import java.util.Arrays;
 import java.util.Objects;

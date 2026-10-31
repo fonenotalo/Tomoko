@@ -5,7 +5,7 @@
 
 package org.coffe.tomoko.util
 
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.stream.StreamType
 
 /**
  * Utility class for [StreamType].

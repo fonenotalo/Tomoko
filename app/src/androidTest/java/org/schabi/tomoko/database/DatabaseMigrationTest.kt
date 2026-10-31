@@ -10,8 +10,8 @@ import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.coffe.tomoko.extractor.ServiceList
-import org.coffe.tomoko.extractor.stream.StreamType
+import org.schabi.newpipe.extractor.ServiceList
+import org.schabi.newpipe.extractor.stream.StreamType
 
 @RunWith(AndroidJUnit4::class)
 class DatabaseMigrationTest {

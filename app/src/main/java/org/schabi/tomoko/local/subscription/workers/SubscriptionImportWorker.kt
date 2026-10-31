@@ -33,7 +33,7 @@ import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import kotlinx.parcelize.Parcelize
 import org.coffe.tomoko.R
-import org.coffe.tomoko.extractor.NewPipe
+import org.schabi.newpipe.extractor.NewPipe
 import org.coffe.tomoko.local.subscription.SubscriptionManager
 import org.coffe.tomoko.streams.io.SharpInputStream
 import org.coffe.tomoko.streams.io.StoredFileHelper

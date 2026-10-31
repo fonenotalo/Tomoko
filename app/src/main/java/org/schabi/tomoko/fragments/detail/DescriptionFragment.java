@@ -1,6 +1,6 @@
 package org.coffe.tomoko.fragments.detail;
 
-import static org.coffe.tomoko.extractor.stream.StreamExtractor.NO_AGE_LIMIT;
+import static org.schabi.newpipe.extractor.stream.StreamExtractor.NO_AGE_LIMIT;
 import static org.coffe.tomoko.util.Localization.getAppLocale;
 
 import android.view.LayoutInflater;
@@ -13,9 +13,9 @@ import androidx.annotation.StringRes;
 import com.evernote.android.state.State;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.stream.Description;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.stream.Description;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
 import org.coffe.tomoko.util.Localization;
 
 import java.util.List;

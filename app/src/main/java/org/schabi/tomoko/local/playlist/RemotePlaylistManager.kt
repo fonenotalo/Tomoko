@@ -11,7 +11,7 @@ import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
 import org.coffe.tomoko.database.AppDatabase
 import org.coffe.tomoko.database.playlist.model.PlaylistRemoteEntity
-import org.coffe.tomoko.extractor.playlist.PlaylistInfo
+import org.schabi.newpipe.extractor.playlist.PlaylistInfo
 
 class RemotePlaylistManager(database: AppDatabase) {
     private val playlistRemoteTable = database.playlistRemoteDAO()

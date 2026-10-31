@@ -9,8 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.text.HtmlCompat;
 
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.stream.Description;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.stream.Description;
 
 import java.util.function.Consumer;
 

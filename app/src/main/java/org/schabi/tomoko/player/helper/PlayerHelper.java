@@ -31,11 +31,11 @@ import com.google.android.exoplayer2.ui.AspectRatioFrameLayout.ResizeMode;
 import com.google.android.exoplayer2.ui.CaptionStyleCompat;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.InfoItem;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
-import org.coffe.tomoko.extractor.stream.SubtitlesStream;
-import org.coffe.tomoko.extractor.utils.Utils;
+import org.schabi.newpipe.extractor.InfoItem;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.stream.SubtitlesStream;
+import org.schabi.newpipe.extractor.utils.Utils;
 import org.coffe.tomoko.player.Player;
 import org.coffe.tomoko.player.playqueue.PlayQueue;
 import org.coffe.tomoko.player.playqueue.PlayQueueItem;

@@ -19,8 +19,8 @@ import androidx.work.workDataOf
 import com.grack.nanojson.JsonParser
 import com.grack.nanojson.JsonParserException
 import java.io.IOException
-import org.coffe.tomoko.extractor.downloader.Response
-import org.coffe.tomoko.extractor.exceptions.ReCaptchaException
+import org.schabi.newpipe.extractor.downloader.Response
+import org.schabi.newpipe.extractor.exceptions.ReCaptchaException
 import org.coffe.tomoko.util.ReleaseVersionUtil
 
 class NewVersionWorker(

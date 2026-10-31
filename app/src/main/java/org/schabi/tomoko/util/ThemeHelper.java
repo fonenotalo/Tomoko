@@ -38,9 +38,9 @@ import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
 import org.coffe.tomoko.R;
-import org.coffe.tomoko.extractor.NewPipe;
-import org.coffe.tomoko.extractor.StreamingService;
-import org.coffe.tomoko.extractor.exceptions.ExtractionException;
+import org.schabi.newpipe.extractor.NewPipe;
+import org.schabi.newpipe.extractor.StreamingService;
+import org.schabi.newpipe.extractor.exceptions.ExtractionException;
 import org.coffe.tomoko.info_list.ItemViewMode;
 
 public final class ThemeHelper {

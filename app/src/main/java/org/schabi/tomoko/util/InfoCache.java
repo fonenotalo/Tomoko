@@ -26,7 +26,7 @@ import androidx.annotation.Nullable;
 import androidx.collection.LruCache;
 
 import org.coffe.tomoko.MainActivity;
-import org.coffe.tomoko.extractor.Info;
+import org.schabi.newpipe.extractor.Info;
 
 import java.util.Map;
 

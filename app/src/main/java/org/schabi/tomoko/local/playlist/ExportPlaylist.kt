@@ -8,8 +8,8 @@ package org.coffe.tomoko.local.playlist
 import android.content.Context
 import org.coffe.tomoko.R
 import org.coffe.tomoko.database.playlist.PlaylistStreamEntry
-import org.coffe.tomoko.extractor.exceptions.ParsingException
-import org.coffe.tomoko.extractor.services.youtube.linkHandler.YoutubeStreamLinkHandlerFactory
+import org.schabi.newpipe.extractor.exceptions.ParsingException
+import org.schabi.newpipe.extractor.services.youtube.linkHandler.YoutubeStreamLinkHandlerFactory
 import org.coffe.tomoko.local.playlist.PlayListShareMode.JUST_URLS
 import org.coffe.tomoko.local.playlist.PlayListShareMode.WITH_TITLES
 import org.coffe.tomoko.local.playlist.PlayListShareMode.YOUTUBE_TEMP_PLAYLIST

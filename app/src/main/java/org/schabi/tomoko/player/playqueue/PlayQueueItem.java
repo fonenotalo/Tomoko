@@ -3,10 +3,10 @@ package org.coffe.tomoko.player.playqueue;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.coffe.tomoko.extractor.Image;
-import org.coffe.tomoko.extractor.stream.StreamInfo;
-import org.coffe.tomoko.extractor.stream.StreamInfoItem;
-import org.coffe.tomoko.extractor.stream.StreamType;
+import org.schabi.newpipe.extractor.Image;
+import org.schabi.newpipe.extractor.stream.StreamInfo;
+import org.schabi.newpipe.extractor.stream.StreamInfoItem;
+import org.schabi.newpipe.extractor.stream.StreamType;
 import org.coffe.tomoko.util.ExtractorHelper;
 
 import java.io.Serializable;
