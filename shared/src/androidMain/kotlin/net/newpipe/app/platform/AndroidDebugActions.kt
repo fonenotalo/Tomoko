@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import android.content.Context
 import co.touchlab.kermit.Logger
@@ -39,6 +39,6 @@ class AndroidDebugActions(context: Context) : DebugActions {
     }
 
     private companion object {
-        const val HOST_CLASS = "org.schabi.newpipe.settings.ComposeDebugActions"
+        const val HOST_CLASS = "org.coffe.tomoko.settings.ComposeDebugActions"
     }
 }

@@ -1,7 +1,7 @@
 package us.shandian.giga.service;
 
-import static org.schabi.newpipe.BuildConfig.APPLICATION_ID;
-import static org.schabi.newpipe.BuildConfig.DEBUG;
+import static org.coffe.tomoko.BuildConfig.APPLICATION_ID;
+import static org.coffe.tomoko.BuildConfig.DEBUG;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -38,13 +38,13 @@ import androidx.core.content.ContextCompat;
 import androidx.core.content.IntentCompat;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.download.DownloadActivity;
-import org.schabi.newpipe.extractor.stream.StreamInfo;
-import org.schabi.newpipe.player.helper.LockManager;
-import org.schabi.newpipe.streams.io.StoredDirectoryHelper;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.Localization;
+import org.coffe.tomoko.R;
+import org.coffe.tomoko.download.DownloadActivity;
+import org.coffe.tomoko.extractor.stream.StreamInfo;
+import org.coffe.tomoko.player.helper.LockManager;
+import org.coffe.tomoko.streams.io.StoredDirectoryHelper;
+import org.coffe.tomoko.streams.io.StoredFileHelper;
+import org.coffe.tomoko.util.Localization;
 
 import java.io.File;
 import java.io.IOException;

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -31,18 +31,18 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.launch
-import net.newpipe.app.composable.PreferenceCategoryTitle
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.SwitchPreference
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_RESUME
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_STATE_LISTS
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_SEARCH_HISTORY
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_WATCH_HISTORY
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.screen.settings.model.HistoryMessage
-import net.newpipe.app.viewmodel.settings.HistorySettingsViewModel
+import net.tomoko.app.composable.PreferenceCategoryTitle
+import net.tomoko.app.composable.PreferenceRow
+import net.tomoko.app.composable.SwitchPreference
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_RESUME
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_STATE_LISTS
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_SEARCH_HISTORY
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_WATCH_HISTORY
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.screen.settings.model.HistoryMessage
+import net.tomoko.app.viewmodel.settings.HistorySettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.cancel
 import newpipe.shared.generated.resources.clear_cookie_summary

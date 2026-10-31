@@ -3,10 +3,10 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import androidx.compose.runtime.Composable
-import net.newpipe.app.screen.ExoPlayerSettingsSections
+import net.tomoko.app.screen.ExoPlayerSettingsSections
 import org.koin.core.annotation.Singleton
 
 @Singleton(binds = [PlayerSettingsSections::class])

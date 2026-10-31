@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.theme
+package net.tomoko.app.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
@@ -22,7 +22,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import com.russhwolf.settings.ObservableSettings
-import net.newpipe.app.preferences.AppearancePreferences
+import net.tomoko.app.preferences.AppearancePreferences
 
 private val lightScheme = lightColorScheme(
     primary = primaryLight,

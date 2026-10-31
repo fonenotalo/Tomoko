@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package net.tomoko.app
 
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application

@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
@@ -21,14 +21,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Destination
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.screen.settings.model.SettingsCategory
-import net.newpipe.app.screen.settings.model.SettingsCategoryType
-import net.newpipe.app.viewmodel.settings.SettingsViewModel
+import net.tomoko.app.composable.PreferenceRow
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Destination
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.screen.settings.model.SettingsCategory
+import net.tomoko.app.screen.settings.model.SettingsCategoryType
+import net.tomoko.app.viewmodel.settings.SettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.ic_search
 import newpipe.shared.generated.resources.search

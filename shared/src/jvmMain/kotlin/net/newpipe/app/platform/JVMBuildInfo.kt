@@ -1,4 +1,4 @@
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import org.koin.core.annotation.Singleton
 

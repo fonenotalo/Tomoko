@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -12,7 +12,7 @@ import android.provider.Settings as AndroidSettings
 import androidx.appcompat.app.AppCompatDelegate
 import co.touchlab.kermit.Logger
 import com.russhwolf.settings.Settings
-import net.newpipe.app.preferences.AppearancePreferences
+import net.tomoko.app.preferences.AppearancePreferences
 import org.koin.core.annotation.Singleton
 
 @Singleton(binds = [AppearanceActions::class])

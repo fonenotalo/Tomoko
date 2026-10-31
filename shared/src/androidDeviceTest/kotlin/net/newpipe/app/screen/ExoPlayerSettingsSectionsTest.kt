@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen
+package net.tomoko.app.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.rememberScrollState

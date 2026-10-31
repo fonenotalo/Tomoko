@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.viewmodel.settings
+package net.tomoko.app.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -11,18 +11,18 @@ import com.russhwolf.settings.Settings
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import net.newpipe.app.platform.HistoryActions
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_RESUME
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_STATE_LISTS
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_SEARCH_HISTORY
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_ENABLE_WATCH_HISTORY
-import net.newpipe.app.preferences.HistoryPreferences.DEFAULT_RECAPTCHA_COOKIES
-import net.newpipe.app.preferences.HistoryPreferences.KEY_ENABLE_PLAYBACK_RESUME
-import net.newpipe.app.preferences.HistoryPreferences.KEY_ENABLE_PLAYBACK_STATE_LISTS
-import net.newpipe.app.preferences.HistoryPreferences.KEY_ENABLE_SEARCH_HISTORY
-import net.newpipe.app.preferences.HistoryPreferences.KEY_ENABLE_WATCH_HISTORY
-import net.newpipe.app.preferences.HistoryPreferences.KEY_RECAPTCHA_COOKIES
-import net.newpipe.app.screen.settings.model.HistoryMessage
+import net.tomoko.app.platform.HistoryActions
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_RESUME
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_PLAYBACK_STATE_LISTS
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_SEARCH_HISTORY
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_ENABLE_WATCH_HISTORY
+import net.tomoko.app.preferences.HistoryPreferences.DEFAULT_RECAPTCHA_COOKIES
+import net.tomoko.app.preferences.HistoryPreferences.KEY_ENABLE_PLAYBACK_RESUME
+import net.tomoko.app.preferences.HistoryPreferences.KEY_ENABLE_PLAYBACK_STATE_LISTS
+import net.tomoko.app.preferences.HistoryPreferences.KEY_ENABLE_SEARCH_HISTORY
+import net.tomoko.app.preferences.HistoryPreferences.KEY_ENABLE_WATCH_HISTORY
+import net.tomoko.app.preferences.HistoryPreferences.KEY_RECAPTCHA_COOKIES
+import net.tomoko.app.screen.settings.model.HistoryMessage
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

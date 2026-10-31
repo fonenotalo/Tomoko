@@ -14,9 +14,9 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.exoplayer2.util.Util;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.streams.io.SharpInputStream;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
+import org.coffe.tomoko.R;
+import org.coffe.tomoko.streams.io.SharpInputStream;
+import org.coffe.tomoko.streams.io.StoredFileHelper;
 
 import java.io.BufferedOutputStream;
 import java.io.File;

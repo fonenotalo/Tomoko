@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.composable
+package net.tomoko.app.composable
 
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.assertIsDisplayed
@@ -15,7 +15,7 @@ import com.russhwolf.settings.MapSettings
 import com.russhwolf.settings.Settings
 import kotlin.test.Test
 import kotlin.test.assertTrue
-import net.newpipe.app.extensions.withKoin
+import net.tomoko.app.extensions.withKoin
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.navigate_back
 import newpipe.shared.generated.resources.title_activity_about

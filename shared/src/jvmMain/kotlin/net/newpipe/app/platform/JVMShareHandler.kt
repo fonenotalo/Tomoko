@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import co.touchlab.kermit.Logger
 import java.awt.Desktop

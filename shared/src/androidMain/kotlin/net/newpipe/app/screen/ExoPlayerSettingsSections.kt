@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen
+package net.tomoko.app.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
@@ -11,17 +11,17 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import net.newpipe.app.composable.ListPreference
-import net.newpipe.app.composable.ListPreferenceEntry
-import net.newpipe.app.composable.SwitchPreference
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_ALWAYS_USE_SET_OUTPUT_SURFACE_WORKAROUND
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_DISABLE_MEDIA_TUNNELING
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_PROGRESSIVE_LOAD_INTERVAL
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_USE_EXOPLAYER_DECODER_FALLBACK
-import net.newpipe.app.preferences.ExoPlayerPreferences.PROGRESSIVE_LOAD_INTERVALS
-import net.newpipe.app.preferences.ExoPlayerPreferences.PROGRESSIVE_LOAD_INTERVAL_EXOPLAYER_DEFAULT
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.viewmodel.settings.PlayerSettingsViewModel
+import net.tomoko.app.composable.ListPreference
+import net.tomoko.app.composable.ListPreferenceEntry
+import net.tomoko.app.composable.SwitchPreference
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_ALWAYS_USE_SET_OUTPUT_SURFACE_WORKAROUND
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_DISABLE_MEDIA_TUNNELING
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_PROGRESSIVE_LOAD_INTERVAL
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_USE_EXOPLAYER_DECODER_FALLBACK
+import net.tomoko.app.preferences.ExoPlayerPreferences.PROGRESSIVE_LOAD_INTERVALS
+import net.tomoko.app.preferences.ExoPlayerPreferences.PROGRESSIVE_LOAD_INTERVAL_EXOPLAYER_DEFAULT
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.viewmodel.settings.PlayerSettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.always_use_exoplayer_set_output_surface_workaround_summary
 import newpipe.shared.generated.resources.always_use_exoplayer_set_output_surface_workaround_title

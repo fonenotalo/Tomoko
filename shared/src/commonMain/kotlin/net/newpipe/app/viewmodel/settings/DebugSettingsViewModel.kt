@@ -3,20 +3,20 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.viewmodel.settings
+package net.tomoko.app.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
 import com.russhwolf.settings.Settings
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_ALLOW_DISPOSED_EXCEPTIONS
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_ALLOW_HEAP_DUMPING
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_SHOW_CRASH_THE_PLAYER
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_SHOW_ORIGINAL_TIME_AGO
-import net.newpipe.app.preferences.DebugPreferences.KEY_ALLOW_DISPOSED_EXCEPTIONS
-import net.newpipe.app.preferences.DebugPreferences.KEY_ALLOW_HEAP_DUMPING
-import net.newpipe.app.preferences.DebugPreferences.KEY_SHOW_CRASH_THE_PLAYER
-import net.newpipe.app.preferences.DebugPreferences.KEY_SHOW_ORIGINAL_TIME_AGO
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_ALLOW_DISPOSED_EXCEPTIONS
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_ALLOW_HEAP_DUMPING
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_SHOW_CRASH_THE_PLAYER
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_SHOW_ORIGINAL_TIME_AGO
+import net.tomoko.app.preferences.DebugPreferences.KEY_ALLOW_DISPOSED_EXCEPTIONS
+import net.tomoko.app.preferences.DebugPreferences.KEY_ALLOW_HEAP_DUMPING
+import net.tomoko.app.preferences.DebugPreferences.KEY_SHOW_CRASH_THE_PLAYER
+import net.tomoko.app.preferences.DebugPreferences.KEY_SHOW_ORIGINAL_TIME_AGO
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

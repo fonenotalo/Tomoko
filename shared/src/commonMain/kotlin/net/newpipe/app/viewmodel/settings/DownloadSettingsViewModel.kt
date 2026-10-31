@@ -3,30 +3,30 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.viewmodel.settings
+package net.tomoko.app.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
 import com.russhwolf.settings.Settings
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import net.newpipe.app.platform.DownloadStorageActions
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_DOWNLOAD_FOLDER
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_FILE_CHARSET
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_LIMIT_QUEUE
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_MAXIMUM_RETRIES
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_PAUSE_ON_METERED_NETWORK
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_REPLACEMENT_CHARACTER
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_STORAGE_ASK
-import net.newpipe.app.preferences.DownloadPreferences.KEY_DOWNLOAD_FOLDER_AUDIO
-import net.newpipe.app.preferences.DownloadPreferences.KEY_DOWNLOAD_FOLDER_VIDEO
-import net.newpipe.app.preferences.DownloadPreferences.KEY_FILE_CHARSET
-import net.newpipe.app.preferences.DownloadPreferences.KEY_LIMIT_QUEUE
-import net.newpipe.app.preferences.DownloadPreferences.KEY_MAXIMUM_RETRIES
-import net.newpipe.app.preferences.DownloadPreferences.KEY_PAUSE_ON_METERED_NETWORK
-import net.newpipe.app.preferences.DownloadPreferences.KEY_REPLACEMENT_CHARACTER
-import net.newpipe.app.preferences.DownloadPreferences.KEY_STORAGE_ASK
-import net.newpipe.app.preferences.DownloadPreferences.KEY_STORAGE_USE_SAF
-import net.newpipe.app.preferences.DownloadPreferences.normalizedMaximumRetries
+import net.tomoko.app.platform.DownloadStorageActions
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_DOWNLOAD_FOLDER
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_FILE_CHARSET
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_LIMIT_QUEUE
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_MAXIMUM_RETRIES
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_PAUSE_ON_METERED_NETWORK
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_REPLACEMENT_CHARACTER
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_STORAGE_ASK
+import net.tomoko.app.preferences.DownloadPreferences.KEY_DOWNLOAD_FOLDER_AUDIO
+import net.tomoko.app.preferences.DownloadPreferences.KEY_DOWNLOAD_FOLDER_VIDEO
+import net.tomoko.app.preferences.DownloadPreferences.KEY_FILE_CHARSET
+import net.tomoko.app.preferences.DownloadPreferences.KEY_LIMIT_QUEUE
+import net.tomoko.app.preferences.DownloadPreferences.KEY_MAXIMUM_RETRIES
+import net.tomoko.app.preferences.DownloadPreferences.KEY_PAUSE_ON_METERED_NETWORK
+import net.tomoko.app.preferences.DownloadPreferences.KEY_REPLACEMENT_CHARACTER
+import net.tomoko.app.preferences.DownloadPreferences.KEY_STORAGE_ASK
+import net.tomoko.app.preferences.DownloadPreferences.KEY_STORAGE_USE_SAF
+import net.tomoko.app.preferences.DownloadPreferences.normalizedMaximumRetries
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -28,17 +28,17 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.launch
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.SwitchPreference
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.platform.DebugActions
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_ALLOW_DISPOSED_EXCEPTIONS
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_ALLOW_HEAP_DUMPING
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_SHOW_CRASH_THE_PLAYER
-import net.newpipe.app.preferences.DebugPreferences.DEFAULT_SHOW_ORIGINAL_TIME_AGO
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.viewmodel.settings.DebugSettingsViewModel
+import net.tomoko.app.composable.PreferenceRow
+import net.tomoko.app.composable.SwitchPreference
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.platform.DebugActions
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_ALLOW_DISPOSED_EXCEPTIONS
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_ALLOW_HEAP_DUMPING
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_SHOW_CRASH_THE_PLAYER
+import net.tomoko.app.preferences.DebugPreferences.DEFAULT_SHOW_ORIGINAL_TIME_AGO
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.viewmodel.settings.DebugSettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.check_new_streams
 import newpipe.shared.generated.resources.crash_the_app

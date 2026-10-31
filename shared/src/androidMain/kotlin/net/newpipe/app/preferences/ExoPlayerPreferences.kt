@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.preferences
+package net.tomoko.app.preferences
 
 object ExoPlayerPreferences {
     const val KEY_PROGRESSIVE_LOAD_INTERVAL = "progressive_load_interval"

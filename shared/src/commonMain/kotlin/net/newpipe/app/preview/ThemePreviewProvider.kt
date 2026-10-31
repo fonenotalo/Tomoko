@@ -3,12 +3,12 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.preview
+package net.tomoko.app.preview
 
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.PreviewWrapperProvider
-import net.newpipe.app.theme.AppTheme
+import net.tomoko.app.theme.AppTheme
 
 /**
  * Default preview provider for composables

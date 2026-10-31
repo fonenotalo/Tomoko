@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package net.tomoko.app
 
 import androidx.compose.runtime.Composable
-import net.newpipe.app.di.KoinApp
-import net.newpipe.app.navigation.Destination
-import net.newpipe.app.navigation.NavDisplay
-import net.newpipe.app.navigation.navModule
-import net.newpipe.app.theme.AppTheme
+import net.tomoko.app.di.KoinApp
+import net.tomoko.app.navigation.Destination
+import net.tomoko.app.navigation.NavDisplay
+import net.tomoko.app.navigation.navModule
+import net.tomoko.app.theme.AppTheme
 import org.koin.compose.KoinApplication
 import org.koin.plugin.module.dsl.koinConfiguration
 

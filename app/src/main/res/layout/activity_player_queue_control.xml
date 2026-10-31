@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="org.schabi.newpipe.player.PlayQueueActivity">
+    tools:context="org.coffe.tomoko.player.PlayQueueActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -37,7 +37,7 @@
         app:layoutManager="LinearLayoutManager"
         tools:listitem="@layout/play_queue_item" />
 
-    <org.schabi.newpipe.views.NewPipeTextView
+    <org.coffe.tomoko.views.NewPipeTextView
         android:id="@+id/seek_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
         android:padding="8dp"
         tools:ignore="RtlHardcoded,RtlSymmetry">
 
-        <org.schabi.newpipe.views.NewPipeTextView
+        <org.coffe.tomoko.views.NewPipeTextView
             android:id="@+id/song_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
 
             <!-- Video author -->
 
-            <org.schabi.newpipe.views.NewPipeTextView
+            <org.coffe.tomoko.views.NewPipeTextView
                 android:id="@+id/artist_name"
                 android:layout_width="0dp"
                 android:layout_weight="1"
@@ -104,7 +104,7 @@
                 tools:text="Duis posuere arcu condimentum lobortis mattis." />
 
             <!-- Play queue progress / total duration -->
-            <org.schabi.newpipe.views.NewPipeTextView
+            <org.coffe.tomoko.views.NewPipeTextView
                 android:id="@+id/queue_total_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
         android:paddingRight="12dp"
         android:layout_above="@+id/playback_controls">
 
-        <org.schabi.newpipe.views.NewPipeTextView
+        <org.coffe.tomoko.views.NewPipeTextView
             android:id="@+id/current_time"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -153,7 +153,7 @@
             tools:progress="25"
             tools:secondaryProgress="50" />
 
-        <org.schabi.newpipe.views.NewPipeTextView
+        <org.coffe.tomoko.views.NewPipeTextView
             android:id="@+id/end_time"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -163,7 +163,7 @@
             tools:ignore="HardcodedText"
             tools:text="1:23:49" />
 
-        <org.schabi.newpipe.views.NewPipeTextView
+        <org.coffe.tomoko.views.NewPipeTextView
             android:id="@+id/live_sync"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

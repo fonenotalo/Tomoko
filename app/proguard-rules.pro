@@ -4,7 +4,7 @@
 -dontobfuscate
 
 ## Rules for NewPipeExtractor
--keep class org.schabi.newpipe.extractor.timeago.patterns.** { *; }
+-keep class org.schabi.tomoko.extractor.timeago.patterns.** { *; }
 ## Rules for Rhino and Rhino Engine
 -keep class org.mozilla.javascript.* { *; }
 -keep class org.mozilla.javascript.** { *; }
@@ -33,7 +33,7 @@
 }
 
 ## For some reason NotificationModeConfigFragment wasn't kept (only referenced in a preference xml)
--keep class org.schabi.newpipe.settings.notifications.** { *; }
+-keep class org.schabi.tomoko.settings.notifications.** { *; }
 
 # Prevent R8 from stripping or renaming Protobuf internal fields
 -keepclassmembers class * extends com.google.protobuf.GeneratedMessageLite {
@@ -47,11 +47,11 @@
 -keepclasseswithmembers class kotlinx.serialization.json.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
--keep,includedescriptorclasses class org.schabi.newpipe.**$$serializer { *; }
--keepclassmembers class org.schabi.newpipe.** {
+-keep,includedescriptorclasses class org.schabi.tomoko.**$$serializer { *; }
+-keepclassmembers class org.schabi.tomoko.** {
     *** Companion;
 }
--keepclasseswithmembers class org.schabi.newpipe.** {
+-keepclasseswithmembers class org.schabi.tomoko.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 

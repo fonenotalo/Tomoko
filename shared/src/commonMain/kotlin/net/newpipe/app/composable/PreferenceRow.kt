@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.composable
+package net.tomoko.app.composable
 
 import androidx.compose.foundation.clickable
 import androidx.compose.material3.Icon
@@ -15,7 +15,7 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.preview.ThemePreviewProvider
+import net.tomoko.app.preview.ThemePreviewProvider
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.ic_headset
 import newpipe.shared.generated.resources.settings_category_video_audio_title

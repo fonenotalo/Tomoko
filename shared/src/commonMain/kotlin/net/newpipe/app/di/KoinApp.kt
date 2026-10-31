@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.di
+package net.tomoko.app.di
 
 import org.koin.core.annotation.KoinApplication
 

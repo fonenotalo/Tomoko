@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
@@ -111,7 +111,7 @@ class AndroidDownloadStorageActions(context: Context) : DownloadStorageActions {
     }
 
     private companion object {
-        const val HOST_CLASS = "org.schabi.newpipe.settings.ComposeDownloadStorage"
+        const val HOST_CLASS = "org.coffe.tomoko.settings.ComposeDownloadStorage"
         const val NEWPIPE_FOLDER = "NewPipe"
     }
 }

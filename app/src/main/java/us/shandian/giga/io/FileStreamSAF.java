@@ -7,7 +7,7 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.streams.io.SharpStream;
+import org.coffe.tomoko.streams.io.SharpStream;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

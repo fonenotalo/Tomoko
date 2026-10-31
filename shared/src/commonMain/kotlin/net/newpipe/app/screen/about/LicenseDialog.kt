@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package net.tomoko.app.screen.about
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
@@ -21,8 +21,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.model.License
-import net.newpipe.app.preview.ThemePreviewProvider
+import net.tomoko.app.model.License
+import net.tomoko.app.preview.ThemePreviewProvider
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.done
 import newpipe.shared.generated.resources.website_title

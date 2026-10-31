@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package net.tomoko.app
 
 object Constants {
     const val URL_GITHUB = "https://github.com/TeamNewPipe/NewPipe"

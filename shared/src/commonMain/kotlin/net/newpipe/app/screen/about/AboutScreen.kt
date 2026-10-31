@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package net.tomoko.app.screen.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,11 +24,11 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.util.fastForEachIndexed
 import kotlinx.coroutines.launch
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.screen.about.navigation.Page
-import net.newpipe.app.theme.currentServiceScheme
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.screen.about.navigation.Page
+import net.tomoko.app.theme.currentServiceScheme
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.title_activity_about
 import org.jetbrains.compose.resources.stringResource

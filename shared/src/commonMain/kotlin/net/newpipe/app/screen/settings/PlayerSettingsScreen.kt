@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -16,9 +16,9 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.platform.PlayerSettingsSections
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.platform.PlayerSettingsSections
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.settings_category_exoplayer_title
 import org.jetbrains.compose.resources.stringResource

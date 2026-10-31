@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.composable
+package net.tomoko.app.composable
 
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -20,7 +20,7 @@ import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.compose.ui.unit.dp
-import net.newpipe.app.preview.ThemePreviewProvider
+import net.tomoko.app.preview.ThemePreviewProvider
 
 private const val DISABLED_ALPHA = 0.38f
 private val SWITCH_END_PADDING = 16.dp

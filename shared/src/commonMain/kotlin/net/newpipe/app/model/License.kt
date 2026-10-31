@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.model
+package net.tomoko.app.model
 
 import kotlinx.serialization.Serializable
 

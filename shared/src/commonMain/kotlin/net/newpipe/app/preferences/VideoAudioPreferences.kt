@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.preferences
+package net.tomoko.app.preferences
 
 /**
  * Preference keys, values, and defaults for the Video & Audio settings screen.

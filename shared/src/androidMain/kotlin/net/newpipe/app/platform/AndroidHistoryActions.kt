@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.platform
+package net.tomoko.app.platform
 
 import android.content.Context
 import co.touchlab.kermit.Logger
@@ -40,6 +40,6 @@ class AndroidHistoryActions(context: Context) : HistoryActions {
     }
 
     private companion object {
-        const val HOST_CLASS = "org.schabi.newpipe.settings.ComposeHistoryActions"
+        const val HOST_CLASS = "org.coffe.tomoko.settings.ComposeHistoryActions"
     }
 }

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.settings.model
+package net.tomoko.app.screen.settings.model
 
 /**
  * One-off confirmations shown after an action on the History and cache settings screen.

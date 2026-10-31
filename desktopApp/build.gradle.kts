@@ -22,7 +22,7 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "net.newpipe.app.MainKt"
+        mainClass = "net.tomoko.app.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)

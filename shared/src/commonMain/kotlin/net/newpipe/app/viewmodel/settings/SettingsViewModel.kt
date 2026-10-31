@@ -3,13 +3,13 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.viewmodel.settings
+package net.tomoko.app.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import net.newpipe.app.platform.BuildInfo
-import net.newpipe.app.screen.settings.model.SettingsCategoryType
+import net.tomoko.app.platform.BuildInfo
+import net.tomoko.app.screen.settings.model.SettingsCategoryType
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

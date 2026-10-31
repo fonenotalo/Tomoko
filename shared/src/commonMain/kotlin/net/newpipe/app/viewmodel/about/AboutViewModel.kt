@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.viewmodel.about
+package net.tomoko.app.viewmodel.about
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -14,9 +14,9 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
-import net.newpipe.app.model.AboutLibraries
-import net.newpipe.app.model.Library
-import net.newpipe.app.platform.ResourceHandler
+import net.tomoko.app.model.AboutLibraries
+import net.tomoko.app.model.Library
+import net.tomoko.app.platform.ResourceHandler
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

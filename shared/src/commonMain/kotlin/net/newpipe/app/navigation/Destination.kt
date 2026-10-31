@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.navigation
+package net.tomoko.app.navigation
 
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable

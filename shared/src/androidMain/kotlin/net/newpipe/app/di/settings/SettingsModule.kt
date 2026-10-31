@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.di.settings
+package net.tomoko.app.di.settings
 
 import android.content.Context
 import androidx.preference.PreferenceManager

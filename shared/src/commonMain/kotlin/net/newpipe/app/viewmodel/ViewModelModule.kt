@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.viewmodel
+package net.tomoko.app.viewmodel
 
 import org.koin.core.annotation.ComponentScan
 import org.koin.core.annotation.Configuration

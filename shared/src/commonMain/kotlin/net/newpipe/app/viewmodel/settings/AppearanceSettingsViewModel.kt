@@ -3,14 +3,14 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.viewmodel.settings
+package net.tomoko.app.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
 import com.russhwolf.settings.Settings
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import net.newpipe.app.platform.AppearanceActions
-import net.newpipe.app.preferences.AppearancePreferences
+import net.tomoko.app.platform.AppearanceActions
+import net.tomoko.app.preferences.AppearancePreferences
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

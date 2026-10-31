@@ -3,24 +3,24 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.viewmodel.settings
+package net.tomoko.app.viewmodel.settings
 
 import androidx.lifecycle.ViewModel
 import com.russhwolf.settings.Settings
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_ALWAYS_USE_SET_OUTPUT_SURFACE_WORKAROUND
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_DISABLE_MEDIA_TUNNELING
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_PROGRESSIVE_LOAD_INTERVAL
-import net.newpipe.app.preferences.ExoPlayerPreferences.DEFAULT_USE_EXOPLAYER_DECODER_FALLBACK
-import net.newpipe.app.preferences.ExoPlayerPreferences.KEY_ALWAYS_USE_SET_OUTPUT_SURFACE_WORKAROUND
-import net.newpipe.app.preferences.ExoPlayerPreferences.KEY_DISABLED_MEDIA_TUNNELING_AUTOMATICALLY
-import net.newpipe.app.preferences.ExoPlayerPreferences.KEY_DISABLE_MEDIA_TUNNELING
-import net.newpipe.app.preferences.ExoPlayerPreferences.KEY_PROGRESSIVE_LOAD_INTERVAL
-import net.newpipe.app.preferences.ExoPlayerPreferences.KEY_USE_EXOPLAYER_DECODER_FALLBACK
-import net.newpipe.app.preferences.ExoPlayerPreferences.MEDIA_TUNNELING_AUTO_DISABLED
-import net.newpipe.app.preferences.ExoPlayerPreferences.MEDIA_TUNNELING_FLAG_UNSET
-import net.newpipe.app.preferences.ExoPlayerPreferences.MEDIA_TUNNELING_USER_MANAGED
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_ALWAYS_USE_SET_OUTPUT_SURFACE_WORKAROUND
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_DISABLE_MEDIA_TUNNELING
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_PROGRESSIVE_LOAD_INTERVAL
+import net.tomoko.app.preferences.ExoPlayerPreferences.DEFAULT_USE_EXOPLAYER_DECODER_FALLBACK
+import net.tomoko.app.preferences.ExoPlayerPreferences.KEY_ALWAYS_USE_SET_OUTPUT_SURFACE_WORKAROUND
+import net.tomoko.app.preferences.ExoPlayerPreferences.KEY_DISABLED_MEDIA_TUNNELING_AUTOMATICALLY
+import net.tomoko.app.preferences.ExoPlayerPreferences.KEY_DISABLE_MEDIA_TUNNELING
+import net.tomoko.app.preferences.ExoPlayerPreferences.KEY_PROGRESSIVE_LOAD_INTERVAL
+import net.tomoko.app.preferences.ExoPlayerPreferences.KEY_USE_EXOPLAYER_DECODER_FALLBACK
+import net.tomoko.app.preferences.ExoPlayerPreferences.MEDIA_TUNNELING_AUTO_DISABLED
+import net.tomoko.app.preferences.ExoPlayerPreferences.MEDIA_TUNNELING_FLAG_UNSET
+import net.tomoko.app.preferences.ExoPlayerPreferences.MEDIA_TUNNELING_USER_MANAGED
 import org.koin.core.annotation.KoinViewModel
 
 @KoinViewModel

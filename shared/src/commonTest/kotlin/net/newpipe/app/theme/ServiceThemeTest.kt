@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.theme
+package net.tomoko.app.theme
 
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.v2.runComposeUiTest
@@ -12,8 +12,8 @@ import com.russhwolf.settings.Settings
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotEquals
-import net.newpipe.app.Constants.KEY_STREAMING_SERVICE
-import net.newpipe.app.extensions.withKoin
+import net.tomoko.app.Constants.KEY_STREAMING_SERVICE
+import net.tomoko.app.extensions.withKoin
 import org.koin.dsl.module
 
 @OptIn(ExperimentalTestApi::class)

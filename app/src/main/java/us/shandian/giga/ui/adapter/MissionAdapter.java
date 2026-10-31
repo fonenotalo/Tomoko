@@ -57,16 +57,16 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.schabi.newpipe.BuildConfig;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.extractor.NewPipe;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import org.coffe.tomoko.BuildConfig;
+import org.coffe.tomoko.R;
+import org.coffe.tomoko.error.ErrorInfo;
+import org.coffe.tomoko.error.ErrorUtil;
+import org.coffe.tomoko.error.UserAction;
+import org.coffe.tomoko.extractor.NewPipe;
+import org.coffe.tomoko.streams.io.StoredFileHelper;
+import org.coffe.tomoko.util.Localization;
+import org.coffe.tomoko.util.NavigationHelper;
+import org.coffe.tomoko.util.external_communication.ShareUtils;
 
 import java.io.File;
 import java.net.URI;

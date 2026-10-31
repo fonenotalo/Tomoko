@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.composable.about
+package net.tomoko.app.composable.about
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -18,10 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.model.Link
-import net.newpipe.app.preview.LinkPreviewProvider
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.theme.spaceMedium
+import net.tomoko.app.model.Link
+import net.tomoko.app.preview.LinkPreviewProvider
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.theme.spaceMedium
 
 /**
  * Composable to display information about links

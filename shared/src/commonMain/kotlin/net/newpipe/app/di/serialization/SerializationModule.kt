@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.di.serialization
+package net.tomoko.app.di.serialization
 
 import kotlinx.serialization.json.Json
 import org.koin.core.annotation.ComponentScan

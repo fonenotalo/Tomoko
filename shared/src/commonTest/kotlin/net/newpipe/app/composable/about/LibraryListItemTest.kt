@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.composable.about
+package net.tomoko.app.composable.about
 
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.assertIsDisplayed
@@ -12,8 +12,8 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.v2.runComposeUiTest
 import kotlin.test.Test
 import kotlin.test.assertTrue
-import net.newpipe.app.model.Developer
-import net.newpipe.app.model.Library
+import net.tomoko.app.model.Developer
+import net.tomoko.app.model.Library
 
 @OptIn(ExperimentalTestApi::class)
 class LibraryListItemTest {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.theme
+package net.tomoko.app.theme
 
 import androidx.compose.ui.unit.dp
 

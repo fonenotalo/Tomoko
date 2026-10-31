@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.assertIsDisplayed
@@ -15,8 +15,8 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertNull
-import net.newpipe.app.extensions.settingsModule
-import net.newpipe.app.extensions.withKoin
+import net.tomoko.app.extensions.settingsModule
+import net.tomoko.app.extensions.withKoin
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.clear_cookie_title
 import newpipe.shared.generated.resources.clear_views_history_title

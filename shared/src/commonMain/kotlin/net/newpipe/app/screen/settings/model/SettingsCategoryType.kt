@@ -1,4 +1,4 @@
-package net.newpipe.app.screen.settings.model
+package net.tomoko.app.screen.settings.model
 
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.content

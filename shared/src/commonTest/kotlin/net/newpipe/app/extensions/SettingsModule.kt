@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.extensions
+package net.tomoko.app.extensions
 
 import com.russhwolf.settings.MapSettings
 import com.russhwolf.settings.Settings

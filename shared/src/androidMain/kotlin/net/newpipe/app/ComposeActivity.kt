@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app
+package net.tomoko.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,9 +13,9 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 import kotlinx.serialization.json.Json
-import net.newpipe.Constants
-import net.newpipe.app.navigation.Destination
-import net.newpipe.app.theme.currentService
+import net.tomoko.Constants
+import net.tomoko.app.navigation.Destination
+import net.tomoko.app.theme.currentService
 
 /**
  * Entry point for compose-related UI components on Android

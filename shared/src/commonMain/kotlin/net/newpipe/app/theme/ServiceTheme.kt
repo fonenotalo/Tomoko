@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.theme
+package net.tomoko.app.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.ColorScheme
@@ -15,7 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalInspectionMode
 import com.russhwolf.settings.Settings
-import net.newpipe.app.Constants.KEY_STREAMING_SERVICE
+import net.tomoko.app.Constants.KEY_STREAMING_SERVICE
 import org.koin.compose.koinInject
 
 val youTubeLightScheme = lightColorScheme(

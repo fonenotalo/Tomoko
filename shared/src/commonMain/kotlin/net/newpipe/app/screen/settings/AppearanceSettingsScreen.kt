@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
@@ -25,16 +25,16 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlinx.coroutines.launch
-import net.newpipe.app.composable.ListPreference
-import net.newpipe.app.composable.ListPreferenceEntry
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.SwitchPreference
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.platform.AppearanceActions
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.preferences.AppearancePreferences
-import net.newpipe.app.viewmodel.settings.AppearanceSettingsViewModel
+import net.tomoko.app.composable.ListPreference
+import net.tomoko.app.composable.ListPreferenceEntry
+import net.tomoko.app.composable.PreferenceRow
+import net.tomoko.app.composable.SwitchPreference
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.platform.AppearanceActions
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.preferences.AppearancePreferences
+import net.tomoko.app.viewmodel.settings.AppearanceSettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.auto
 import newpipe.shared.generated.resources.auto_device_theme_title

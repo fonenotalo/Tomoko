@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package net.tomoko.app.screen.about
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -32,16 +32,16 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import kotlin.random.Random
-import net.newpipe.app.composable.about.LibraryListItem
-import net.newpipe.app.model.Library
-import net.newpipe.app.model.License
-import net.newpipe.app.platform.ShareHandler
-import net.newpipe.app.preview.LibraryPreviewProvider
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.theme.spaceMedium
-import net.newpipe.app.theme.spaceXSmall
-import net.newpipe.app.theme.spaceXXSmall
-import net.newpipe.app.viewmodel.about.AboutViewModel
+import net.tomoko.app.composable.about.LibraryListItem
+import net.tomoko.app.model.Library
+import net.tomoko.app.model.License
+import net.tomoko.app.platform.ShareHandler
+import net.tomoko.app.preview.LibraryPreviewProvider
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.theme.spaceMedium
+import net.tomoko.app.theme.spaceXSmall
+import net.tomoko.app.theme.spaceXXSmall
+import net.tomoko.app.viewmodel.about.AboutViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.app_license
 import newpipe.shared.generated.resources.app_license_title

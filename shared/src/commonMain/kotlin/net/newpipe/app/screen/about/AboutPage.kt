@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package net.newpipe.app.screen.about
+package net.tomoko.app.screen.about
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,17 +30,17 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
-import net.newpipe.app.BuildConfig
-import net.newpipe.app.Constants
-import net.newpipe.app.composable.about.LinkListItem
-import net.newpipe.app.model.Link
-import net.newpipe.app.platform.ShareHandler
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.theme.iconTVDPI
-import net.newpipe.app.theme.logoBackground
-import net.newpipe.app.theme.spaceLarge
-import net.newpipe.app.theme.spaceXSmall
-import net.newpipe.app.theme.spaceXXSmall
+import net.tomoko.app.BuildConfig
+import net.tomoko.app.Constants
+import net.tomoko.app.composable.about.LinkListItem
+import net.tomoko.app.model.Link
+import net.tomoko.app.platform.ShareHandler
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.theme.iconTVDPI
+import net.tomoko.app.theme.logoBackground
+import net.tomoko.app.theme.spaceLarge
+import net.tomoko.app.theme.spaceXSmall
+import net.tomoko.app.theme.spaceXXSmall
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.app_description
 import newpipe.shared.generated.resources.contribution_encouragement

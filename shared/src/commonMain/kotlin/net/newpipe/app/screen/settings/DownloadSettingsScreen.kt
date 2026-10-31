@@ -3,7 +3,7 @@
 * SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-package net.newpipe.app.screen.settings
+package net.tomoko.app.screen.settings
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -26,30 +26,30 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewWrapper
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import net.newpipe.app.composable.EditTextPreference
-import net.newpipe.app.composable.ListPreference
-import net.newpipe.app.composable.ListPreferenceEntry
-import net.newpipe.app.composable.PreferenceRow
-import net.newpipe.app.composable.SwitchPreference
-import net.newpipe.app.composable.TopAppBar
-import net.newpipe.app.navigation.Navigator
-import net.newpipe.app.platform.DownloadFolderError
-import net.newpipe.app.platform.DownloadStorageActions
-import net.newpipe.app.platform.FolderPickResult
-import net.newpipe.app.preferences.DownloadPreferences.CHARSET_LETTERS_AND_DIGITS
-import net.newpipe.app.preferences.DownloadPreferences.CHARSET_MOST_SPECIAL
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_DOWNLOAD_FOLDER
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_FILE_CHARSET
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_LIMIT_QUEUE
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_MAXIMUM_RETRIES
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_PAUSE_ON_METERED_NETWORK
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_REPLACEMENT_CHARACTER
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_STORAGE_ASK
-import net.newpipe.app.preferences.DownloadPreferences.DEFAULT_STORAGE_USE_SAF
-import net.newpipe.app.preferences.DownloadPreferences.MAXIMUM_RETRIES_NONE
-import net.newpipe.app.preferences.DownloadPreferences.MAXIMUM_RETRY_COUNTS
-import net.newpipe.app.preview.ThemePreviewProvider
-import net.newpipe.app.viewmodel.settings.DownloadSettingsViewModel
+import net.tomoko.app.composable.EditTextPreference
+import net.tomoko.app.composable.ListPreference
+import net.tomoko.app.composable.ListPreferenceEntry
+import net.tomoko.app.composable.PreferenceRow
+import net.tomoko.app.composable.SwitchPreference
+import net.tomoko.app.composable.TopAppBar
+import net.tomoko.app.navigation.Navigator
+import net.tomoko.app.platform.DownloadFolderError
+import net.tomoko.app.platform.DownloadStorageActions
+import net.tomoko.app.platform.FolderPickResult
+import net.tomoko.app.preferences.DownloadPreferences.CHARSET_LETTERS_AND_DIGITS
+import net.tomoko.app.preferences.DownloadPreferences.CHARSET_MOST_SPECIAL
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_DOWNLOAD_FOLDER
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_FILE_CHARSET
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_LIMIT_QUEUE
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_MAXIMUM_RETRIES
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_PAUSE_ON_METERED_NETWORK
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_REPLACEMENT_CHARACTER
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_STORAGE_ASK
+import net.tomoko.app.preferences.DownloadPreferences.DEFAULT_STORAGE_USE_SAF
+import net.tomoko.app.preferences.DownloadPreferences.MAXIMUM_RETRIES_NONE
+import net.tomoko.app.preferences.DownloadPreferences.MAXIMUM_RETRY_COUNTS
+import net.tomoko.app.preview.ThemePreviewProvider
+import net.tomoko.app.viewmodel.settings.DownloadSettingsViewModel
 import newpipe.shared.generated.resources.Res
 import newpipe.shared.generated.resources.cancel
 import newpipe.shared.generated.resources.charset_letters_and_digits
