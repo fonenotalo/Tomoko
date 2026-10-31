@@ -907,4 +907,11 @@
     <string name="api23_requirement_dialog_title">NewPipe is dropping support for Android 5</string>
     <string name="api23_requirement_dialog_message">Unfortunately NewPipe depends on a few libraries that dropped support for Android 5.0 and 5.1. The next NewPipe release will therefore only work on devices with Android 6 or higher, sadly. Read more in the blogpost.</string>
     <string name="api23_requirement_dialog_blogpost">Blogpost</string>
+
+    <string name="local_music">Local Music</string>
+    <string name="local_music_notification_channel">Local music playback</string>
+    <string name="local_music_empty">No local music found</string>
+    <string name="local_music_permission">Storage permission required to load music</string>
+    <string name="local_music_search_hint">Search music</string>
+
 </resources>

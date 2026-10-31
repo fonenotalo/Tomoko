@@ -110,6 +110,13 @@ public class MainActivity extends AppCompatActivity {
     public static final boolean DEBUG = !BuildConfig.BUILD_TYPE.equals("release");
 
     private ActivityMainBinding mainBinding;
+    private org.coffe.tomoko.localmusic.LocalMusicService localMusicService;
+    private boolean localMusicBound = false;
+    private View localMiniPlayer;
+    private android.widget.TextView miniTitle;
+    private android.widget.Button miniPlayPause;
+    private android.widget.Button miniPrev;
+    private android.widget.Button miniNext;
     private DrawerHeaderBinding drawerHeaderBinding;
     private DrawerLayoutBinding drawerLayoutBinding;
     private ToolbarLayoutBinding toolbarLayoutBinding;
@@ -119,12 +126,14 @@ public class MainActivity extends AppCompatActivity {
     private boolean servicesShown = false;
 
     private BroadcastReceiver broadcastReceiver;
+    private android.content.ServiceConnection localMusicConnection;
 
     private static final int ITEM_ID_SUBSCRIPTIONS = -1;
     private static final int ITEM_ID_FEED = -2;
     private static final int ITEM_ID_BOOKMARKS = -3;
     private static final int ITEM_ID_DOWNLOADS = -4;
     private static final int ITEM_ID_HISTORY = -5;
+    private static final int ITEM_ID_LOCAL_MUSIC = -6;
     private static final int ITEM_ID_SETTINGS = 0;
     private static final int ITEM_ID_DONATION = 1;
     private static final int ITEM_ID_ABOUT = 2;
@@ -188,6 +197,73 @@ public class MainActivity extends AppCompatActivity {
         }
         openMiniPlayerUponPlayerStarted();
 
+        localMiniPlayer = findViewById(R.id.local_mini_player);
+        if (localMiniPlayer != null) {
+            miniTitle = localMiniPlayer.findViewById(R.id.mini_title);
+            miniPlayPause = localMiniPlayer.findViewById(R.id.mini_play_pause);
+            miniPrev = localMiniPlayer.findViewById(R.id.mini_prev);
+            miniNext = localMiniPlayer.findViewById(R.id.mini_next);
+
+            miniPlayPause.setOnClickListener(v -> {
+                if (localMusicService != null) localMusicService.toggle();
+            });
+            miniPrev.setOnClickListener(v -> {
+                if (localMusicService != null) localMusicService.previous();
+            });
+            miniNext.setOnClickListener(v -> {
+                if (localMusicService != null) localMusicService.next();
+            });
+        }
+
+        localMusicConnection = new android.content.ServiceConnection() {
+            @Override
+            public void onServiceConnected(android.content.ComponentName name, android.os.IBinder serviceBinder) {
+                localMusicService = ((org.coffe.tomoko.localmusic.LocalMusicService.LocalBinder) serviceBinder).getService();
+                localMusicBound = true;
+                localMusicService.addListener(new org.coffe.tomoko.localmusic.LocalMusicService.Listener() {
+                    @Override
+                    public void onTrackChanged(org.coffe.tomoko.localmusic.LocalTrack track) {
+                        runOnUiThread(() -> {
+                            if (localMiniPlayer == null) return;
+                            if (track == null) {
+                                localMiniPlayer.setVisibility(View.GONE);
+                            } else {
+                                localMiniPlayer.setVisibility(View.VISIBLE);
+                                miniTitle.setText(track.getTitle());
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onPlaybackStateChanged(boolean isPlaying) {
+                        runOnUiThread(() -> {
+                            if (miniPlayPause != null) {
+                                miniPlayPause.setText(isPlaying ? "Pause" : "Play");
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onPositionChanged(long positionMs, long durationMs) {
+                        // no-op for mini player
+                    }
+                });
+            }
+
+            @Override
+            public void onServiceDisconnected(android.content.ComponentName name) {
+                localMusicService = null;
+                localMusicBound = false;
+            }
+        };
+
+        try {
+            org.coffe.tomoko.localmusic.LocalMusicService.start(this);
+            bindService(new Intent(this, org.coffe.tomoko.localmusic.LocalMusicService.class),
+                    localMusicConnection, Context.BIND_AUTO_CREATE);
+        } catch (final Exception e) {
+            Log.e(TAG, "Failed to bind local music service", e);
+        }
         if (PermissionHelper.checkPostNotificationsPermission(this,
                 PermissionHelper.POST_NOTIFICATIONS_REQUEST_CODE)) {
             // Schedule worker for checking for new streams and creating corresponding notifications
@@ -291,6 +367,9 @@ public class MainActivity extends AppCompatActivity {
         drawerLayoutBinding.navigation.getMenu()
                 .add(R.id.menu_tabs_group, ITEM_ID_HISTORY, ORDER, R.string.action_history)
                 .setIcon(R.drawable.ic_history);
+        drawerLayoutBinding.navigation.getMenu()
+                .add(R.id.menu_tabs_group, ITEM_ID_LOCAL_MUSIC, ORDER, R.string.local_music)
+                .setIcon(R.drawable.ic_music_note);
 
         //Kiosks
         final int currentServiceId = ServiceHelper.getSelectedServiceId(this);
@@ -367,6 +446,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case ITEM_ID_HISTORY:
                 NavigationHelper.openStatisticFragment(getSupportFragmentManager());
+                break;
+            case ITEM_ID_LOCAL_MUSIC:
+                startActivity(new Intent(this, org.coffe.tomoko.localmusic.LocalMusicActivity.class));
                 break;
         }
     }
@@ -510,6 +592,14 @@ public class MainActivity extends AppCompatActivity {
         }
         if (broadcastReceiver != null) {
             unregisterReceiver(broadcastReceiver);
+        }
+        if (localMusicBound && localMusicConnection != null) {
+            try {
+                unbindService(localMusicConnection);
+            } catch (final Exception e) {
+                Log.e(TAG, "Failed to unbind local music service", e);
+            }
+            localMusicBound = false;
         }
     }
 

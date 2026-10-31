@@ -18,6 +18,9 @@
             layout="@layout/toolbar_layout"
             android:id="@+id/toolbar_layout"/>
 
+        <include
+            layout="@layout/mini_player_local" />
+
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_player_holder"
             android:layout_width="match_parent"
