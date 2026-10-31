@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+<!-- Pixel Light Theme -->
+<color name="pixel_light_primary">#6750A4</color>
+<color name="pixel_light_primary_variant">#4F378B</color>
+<color name="pixel_light_on_primary">#FFFFFF</color>
+<color name="pixel_light_on_primary_variant">#EADDFF</color>
+<color name="pixel_light_on_surface">#1D1B20</color>
+<color name="pixel_light_surface">#FFFBFE</color>
+<color name="pixel_light_background">#FFFBFE</color>
+
     <!-- Pixel-inspired colors for Tomoko -->
     <!-- Primary - Deep Blue like Pixel -->
     <color name="colorPrimary">#673AB7</color>
