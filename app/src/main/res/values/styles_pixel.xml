@@ -87,53 +87,53 @@
     </style>
 
     <style name="TextAppearance.Tomoko.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
-        <item name="fontFamily">@font/google_sans_bold</item>
-        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="fontFamily">@fsans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextAppearance.Tomoko.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
-        <item name="fontFamily">@font/google_sans_medium</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="TextAppearance.Tomoko.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
-        <item name="fontFamily">@font/google_sans_medium</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="TextAppearance.Tomoko.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
-        <item name="fontFamily">@font/google_sans_medium</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="TextAppearance.Tomoko.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
-        <item name="fontFamily">@font/google_sans_regular</item>
-        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextAppearance.Tomoko.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
-        <item name="fontFamily">@font/google_sans_regular</item>
-        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextAppearance.Tomoko.BodySmall" parent="TextAppearance.Material3.BodySmall">
-        <item name="fontFamily">@font/google_sans_regular</item>
-        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextAppearance.Tomoko.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
-        <item name="fontFamily">@font/google_sans_medium</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="TextAppearance.Tomoko.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
-        <item name="fontFamily">@font/google_sans_medium</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="TextAppearance.Tomoko.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
-        <item name="fontFamily">@font/google_sans_medium</item>
-        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
 </resources>
