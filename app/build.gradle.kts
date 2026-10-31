@@ -1,9 +1,11 @@
+
 /*
  * SPDX-FileCopyrightText: 2025 NewPipe e.V. <https://newpipe-ev.de>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import com.android.build.api.dsl.ApplicationExtension
+import java.util.Properties
 import java.util.regex.Pattern
 
 plugins {
@@ -18,9 +20,18 @@ plugins {
     checkstyle
 }
 
+// Load release signing configuration when available.
+val keystoreProperties = Properties().apply {
+    val propertiesFile = rootProject.file("keystore.properties")
+    if (propertiesFile.isFile) {
+        propertiesFile.inputStream().use { load(it) }
+    }
+}
+
 val gitWorkingBranch = providers.exec {
     commandLine("git", "rev-parse", "--abbrev-ref", "HEAD")
 }.standardOutput.asText.map { it.trim() }
+
 val defaultBranches = listOf("master", "dev")
 val workingBranch = gitWorkingBranch.getOrElse("")
 val normalizedWorkingBranch = workingBranch
@@ -37,77 +48,137 @@ configure<ApplicationExtension> {
             minorApiLevel = NEWPIPE_VERSION_SDK_COMPILE_MINOR
         }
     }
+
     namespace = NEWPIPE_APPLICATION_ID_OLD
 
     defaultConfig {
         applicationId = NEWPIPE_APPLICATION_ID_OLD
-        resValue("string", "app_name", "NewPipe")
+
+        resValue("string", "app_name", "Tomoko")
+
         minSdk {
             version = release(NEWPIPE_VERSION_SDK_MIN)
         }
+
         targetSdk {
             version = release(NEWPIPE_VERSION_SDK_TARGET)
         }
 
-        versionCode = System.getProperty("versionCodeOverride")?.toInt() ?: NEWPIPE_VERSION_CODE
+        versionCode = System.getProperty("versionCodeOverride")
+            ?.toInt() ?: NEWPIPE_VERSION_CODE
 
         versionName = NEWPIPE_VERSION_NAME
-        System.getProperty("versionNameSuffix")?.let { versionNameSuffix = it }
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        System.getProperty("versionNameSuffix")?.let {
+            versionNameSuffix = it
+        }
+
+        testInstrumentationRunner =
+            "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        create("release") {
+            val storePath =
+                keystoreProperties.getProperty("storeFile")
+
+            if (!storePath.isNullOrBlank()) {
+                storeFile = rootProject.file(storePath)
+            }
+
+            storePassword =
+                keystoreProperties.getProperty("storePassword")
+
+            keyAlias =
+                keystoreProperties.getProperty("keyAlias")
+
+            keyPassword =
+                keystoreProperties.getProperty("keyPassword")
+        }
     }
 
     buildTypes {
         debug {
             isDebuggable = true
 
-            // suffix the app id and the app name with git branch name
-            if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
+            if (normalizedWorkingBranch.isEmpty()
+                || workingBranch in defaultBranches
+            ) {
                 applicationIdSuffix = ".debug"
-                resValue("string", "app_name", "NewPipe Debug")
+                resValue("string", "app_name", "Tomoko Debug")
             } else {
-                applicationIdSuffix = ".debug.$normalizedWorkingBranch"
-                resValue("string", "app_name", "NewPipe $workingBranch")
+                applicationIdSuffix =
+                    ".debug.$normalizedWorkingBranch"
+
+                resValue(
+                    "string",
+                    "app_name",
+                    "Tomoko $workingBranch"
+                )
             }
         }
 
         release {
+            // Sign release builds when CI provides a keystore.
+            if (rootProject.file("keystore.properties").isFile) {
+                signingConfig =
+                    signingConfigs.getByName("release")
+            }
+
             System.getProperty("packageSuffix")?.let { suffix ->
                 applicationIdSuffix = suffix
-                resValue("string", "app_name", "NewPipe $suffix")
+                resValue(
+                    "string",
+                    "app_name",
+                    "Tomoko $suffix"
+                )
             }
+
             isMinifyEnabled = true
             isShrinkResources = true
+
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
+                getDefaultProguardFile(
+                    "proguard-android-optimize.txt"
+                ),
                 "proguard-rules.pro"
             )
         }
 
         register("continuous") {
             initWith(getByName("release"))
+
             signingConfig = signingConfigs.getByName("debug")
             isDefault = true
 
-            // suffix the app id and the app name with git branch name
-            if (normalizedWorkingBranch.isEmpty() || workingBranch in defaultBranches) {
+            if (normalizedWorkingBranch.isEmpty()
+                || workingBranch in defaultBranches
+            ) {
                 applicationIdSuffix = ".continuous"
-                resValue("string", "app_name", "NewPipe Continuous")
+                resValue(
+                    "string",
+                    "app_name",
+                    "Tomoko Continuous"
+                )
             } else {
-                applicationIdSuffix = ".continuous.$normalizedWorkingBranch"
-                resValue("string", "app_name", "NewPipe $workingBranch")
+                applicationIdSuffix =
+                    ".continuous.$normalizedWorkingBranch"
+
+                resValue(
+                    "string",
+                    "app_name",
+                    "Tomoko $workingBranch"
+                )
             }
         }
     }
 
     lint {
         lintConfig = file("lint.xml")
-        // Continue the debug build even when errors are found
         abortOnError = false
     }
 
     compileOptions {
-        // Flag to enable support for the new language APIs
         isCoreLibraryDesugaringEnabled = true
         encoding = "utf-8"
     }
@@ -130,12 +201,10 @@ configure<ApplicationExtension> {
 
     packaging {
         resources {
-            // remove two files which belong to jsoup
-            // no idea how they ended up in the META-INF dir...
             excludes += setOf(
                 "META-INF/README.md",
                 "META-INF/CHANGES",
-                "META-INF/COPYRIGHT" // "COPYRIGHT" belongs to RxJava...
+                "META-INF/COPYRIGHT"
             )
         }
     }
@@ -145,7 +214,7 @@ room3 {
     schemaDirectory("$projectDir/schemas")
 }
 
-// Custom dependency configuration for ktlint
+// Custom dependency configuration for ktlint.
 val ktlint by configurations.creating
 
 checkstyle {
@@ -173,29 +242,53 @@ tasks.register<Checkstyle>("runCheckstyle") {
     }
 }
 
-val outputDir = project.layout.buildDirectory.dir("reports/ktlint/")
-val inputFiles = fileTree("src") { include("**/*.kt") }
+val outputDir =
+    project.layout.buildDirectory.dir("reports/ktlint/")
+
+val inputFiles = fileTree("src") {
+    include("**/*.kt")
+}
 
 tasks.register<JavaExec>("runKtlint") {
     inputs.files(inputFiles)
     outputs.dir(outputDir)
+
     mainClass.set("com.pinterest.ktlint.Main")
     classpath = configurations.getByName("ktlint")
-    args = listOf("--editorconfig=../.editorconfig", "src/**/*.kt")
-    jvmArgs = listOf("--add-opens", "java.base/java.lang=ALL-UNNAMED")
+
+    args = listOf(
+        "--editorconfig=../.editorconfig",
+        "src/**/*.kt"
+    )
+
+    jvmArgs = listOf(
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED"
+    )
 }
 
 tasks.register<JavaExec>("formatKtlint") {
     inputs.files(inputFiles)
     outputs.dir(outputDir)
+
     mainClass.set("com.pinterest.ktlint.Main")
     classpath = configurations.getByName("ktlint")
-    args = listOf("--editorconfig=../.editorconfig", "-F", "src/**/*.kt")
-    jvmArgs = listOf("--add-opens", "java.base/java.lang=ALL-UNNAMED")
+
+    args = listOf(
+        "--editorconfig=../.editorconfig",
+        "-F",
+        "src/**/*.kt"
+    )
+
+    jvmArgs = listOf(
+        "--add-opens",
+        "java.base/java.lang=ALL-UNNAMED"
+    )
 }
 
 tasks.register<CheckDependenciesOrder>("checkDependenciesOrder") {
-    tomlFile = layout.projectDirectory.file("../gradle/libs.versions.toml")
+    tomlFile =
+        layout.projectDirectory.file("../gradle/libs.versions.toml")
 }
 
 afterEvaluate {
@@ -203,7 +296,12 @@ afterEvaluate {
         if (!System.getProperties().containsKey("skipFormatKtlint")) {
             dependsOn("formatKtlint")
         }
-        dependsOn("runCheckstyle", "runKtlint", "checkDependenciesOrder")
+
+        dependsOn(
+            "runCheckstyle",
+            "runKtlint",
+            "checkDependenciesOrder"
+        )
     }
 }
 
@@ -305,6 +403,7 @@ dependencies {
     // Reactive extensions for Java VM
     implementation(libs.reactivex.rxjava)
     implementation(libs.reactivex.rxandroid)
+
     // RxJava binding APIs for Android UI widgets
     implementation(libs.jakewharton.rxbinding)
 
@@ -315,6 +414,7 @@ dependencies {
     debugImplementation(libs.squareup.leakcanary.watcher)
     debugImplementation(libs.squareup.leakcanary.plumber)
     debugImplementation(libs.squareup.leakcanary.core)
+
     // Debug bridge for Android
     debugImplementation(libs.facebook.stetho.core)
     debugImplementation(libs.facebook.stetho.okhttp3)
@@ -335,15 +435,27 @@ aboutLibraries {
     collect {
         configPath = file("../config/aboutlibraries")
     }
+
     export {
-        outputFile = file("../shared/src/androidMain/assets/aboutlibraries.json")
+        outputFile =
+            file("../shared/src/androidMain/assets/aboutlibraries.json")
+
         prettyPrint = true
-        excludeFields.addAll("organization", "scm", "funding")
+        excludeFields.addAll(
+            "organization",
+            "scm",
+            "funding"
+        )
     }
+
     library {
         exclusionPatterns = listOf(
-            Pattern.compile("^com\\.github\\.TeamNewPipe:NewPipeExtractor$"),
-            Pattern.compile("^com\\.evernote:android-state$")
+            Pattern.compile(
+                "^com\\.github\\.TeamNewPipe:NewPipeExtractor$"
+            ),
+            Pattern.compile(
+                "^com\\.evernote:android-state$"
+            )
         )
     }
 }
