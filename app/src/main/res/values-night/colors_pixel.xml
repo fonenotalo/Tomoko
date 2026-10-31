@@ -15,7 +15,6 @@
     <color name="colorOnSecondary">#000000</color>
 
     <!-- Background - Pixel Dark -->
-    <color name="android:windowBackground">#121212</color>
     <color name="surface_color">#1E1E1E</color>
     <color name="colorOnSurface">#E0E0E0</color>
 
