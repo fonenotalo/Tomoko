@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<resources>
+
     <!-- Pixel Dark Theme -->
     <color name="pixel_light_primary">#D0BCFF</color>
     <color name="pixel_light_primary_variant">#B69DF8</color>
