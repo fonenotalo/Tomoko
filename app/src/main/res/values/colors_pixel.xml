@@ -15,7 +15,6 @@
     <color name="colorOnSecondary">#000000</color>
 
     <!-- Background - Pixel white -->
-    <color name="android:windowBackground">#FFFFFF</color>
     <color name="background_color">#F7F9FC</color>
     <color name="surface_color">#FFFFFF</color>
     <color onSurface>#212121</color>
