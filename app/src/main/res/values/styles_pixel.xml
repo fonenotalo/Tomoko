@@ -77,17 +77,17 @@
 
     <!-- Typography - Google Sans inspired -->
     <style name="TextAppearance.Tomoko.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
-        <item name="fontFamily">@font/google_sans_bold</item>
-        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextAppearance.Tomoko.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
-        <item name="fontFamily">@font/google_sans_bold</item>
-        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="TextAppearance.Tomoko.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
-        <item name="fontFamily">@fsans-serif</item>
+        <item name="fontFamily">sans-serif</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
 
