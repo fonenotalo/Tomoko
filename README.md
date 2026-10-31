@@ -6,16 +6,16 @@
 <h4 align="center">A free, lightweight streaming front-end for Android, desktop, and iOS.</h4>
 
 <p align="center">
-<a href="https://github.com/Tomoko/Tomoko/releases"><img src="https://img.shields.io/github/release/Tomoko/Tomoko.svg?style=for-the-badge&logo=github&color=5865F2"></a>
-<a href="https://github.com/Tomoko/Tomoko/actions"><img src="https://img.shields.io/github/actions/workflow/run/Tomoko/Tomoko/build-release-apk.yml?branch=main&event=push&style=for-the-badge"></a>
+<a href="https://github.com/fonenotalo/Tomoko/releases"><img src="https://img.shields.io/github/release/fonenotalo/Tomoko.svg?style=for-the-badge&logo=github&color=5865F2"></a>
+<a href="https://github.com/fonenotalo/Tomoko/actions/workflows/build-release-apk.yml"><img src="https://img.shields.io/github/actions/workflow/run/fonenotalo/Tomoko/build-release-apk.yml?branch=main&event=push&style=for-the-badge"></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0" alt="License: GPLv3"><img src="https://img.shields.io/badge/License-GPL%20v3-blue?style=for-the-badge&color=2ECC71"></a>
-<a href="https://github.com/Tomoko/Tomoko/stargazers"><img src="https://img.shields.io/github/stars/Tomoko/Tomoko?style=for-the-badge&logo=github&color=F1E05A"></a>
+<a href="https://github.com/fonenotalo/Tomoko/stargazers"><img src="https://img.shields.io/github/stars/fonenotalo/Tomoko?style=for-the-badge&logo=github&color=F1E05A"></a>
 </p>
 
 <p align="center">
-<a href="https://github.com/Tomoko/Tomoko/discussions"><img src="https://img.shields.io/badge/Chat-Discussions-blue?style=for-the-badge&color=3498DB"></a>
-<a href="https://github.com/Tomoko/Tomoko/issues"><img src="https://img.shields.io/badge/Issues-Open-green?style=for-the-badge&color=27AE60"></a>
-<a href="https://github.com/Tomoko/Tomoko/blob/main/androidApp/build.gradle.kts"><img src="https://img.shields.io/badge/Platform-Android%2C%20Desktop%2C%20iOS-brightgreen?style=for-the-badge&logo=android&logoColor=white&logoSize=12"></a>
+<a href="https://github.com/fonenotalo/Tomoko/discussions"><img src="https://img.shields.io/badge/Chat-Discussions-blue?style=for-the-badge&color=3498DB"></a>
+<a href="https://github.com/fonenotalo/Tomoko/issues"><img src="https://img.shields.io/badge/Issues-Open-green?style=for-the-badge&color=27AE60"></a>
+<a href="https://github.com/fonenotalo/Tomoko/blob/main/app/build.gradle.kts"><img src="https://img.shields.io/badge/Platform-Android%2C%20Desktop%2C%20iOS-brightgreen?style=for-the-badge&logo=android&logoColor=white&logoSize=12"></a>
 </p>
 
 ---
@@ -54,8 +54,6 @@ Tomoko is free software: you can redistribute and/or modify it under the terms o
 
 ---
 
-*Last updated: 2026-10-31*
-
 ### ⚙️ Build from Source
 
 ```bash
@@ -70,22 +68,4 @@ echo "LISTEN_TOGETHER_SERVER=https://api.tomoko.app" >> local.properties
 
 This produces an APK at `app/build/outputs/apk/continuous/app-continuous.apk`.
 
-### 🔄 Development Workflow
-
-- **Main branch**: Desenvolvimento principal com mudanças recentes
-- **dev branch**: Recursos para próxima release
-- **refactor branch**: Reestruturação e limpeza de código
-- **release branch**: Preparação para nova versão
-
-Todos os branches contêm a mesma árvore base; as diferenças são apenas as etapas de desenvolvimento.
-
----
-
-### 📋 Contributing
-
-- Siga as diretrizes de contribuição da comunidade
-- Relate bugs e solicite recursos usando os GitHub Issues
-- Participe das discussões no Discord (link no README)
-- Faça pull requests apenas para o branch main — guias detalhados de contribuição estão disponíveis em `CONTRIBUTING.md`.
-
-#### Código 
+*Last updated: 2026-10-31*
