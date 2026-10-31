@@ -1,5 +1,5 @@
 
-name: Build Release APK
+name: Build Tomoko APK
 
 on:
   workflow_dispatch:
@@ -10,6 +10,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -18,34 +19,32 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'temurin'
-          cache: 'gradle'
-
-      - name: Setup signing
-        run: |
-          echo "${{ secrets.KEYSTORE_B64 }}" | base64 -d > tomoko-release.jks
-          {
-            echo "storeFile=tomoko-release.jks"
-            echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}"
-            echo "keyAlias=${{ secrets.KEY_ALIAS }}"
-            echo "keyPassword=${{ secrets.KEYSTORE_PASSWORD }}"
-          } > keystore.properties
+          distribution: temurin
+          cache: gradle
 
       - name: Write local.properties
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_SECRET: ${{ secrets.LASTFM_SECRET }}
         run: |
-          echo "LASTFM_API_KEY=${{ secrets.LASTFM_API_KEY }}" > local.properties
-          echo "LASTFM_SECRET=${{ secrets.LASTFM_SECRET }}" >> local.properties
-          echo "LISTEN_TOGETHER_SERVER=https://api.tomoko.app" >> local.properties
+          printf 'LASTFM_API_KEY=%s\n' "$LASTFM_API_KEY" > local.properties
+          printf 'LASTFM_SECRET=%s\n' "$LASTFM_SECRET" >> local.properties
+          printf 'LISTEN_TOGETHER_SERVER=https://api.tomoko.app\n' >> local.properties
 
       - name: Grant execute permission
         run: chmod +x gradlew
 
-      - name: Build release APK
-        run: ./gradlew assembleRelease --stacktrace
+      - name: Build unsigned release APK
+        run: |
+          ./gradlew :app:assembleRelease \
+            --stacktrace \
+            --no-configuration-cache \
+            --warning-mode all
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: tomoko-apk-release
+          name: tomoko-release-unsigned
           path: app/build/outputs/apk/release/*.apk
+          if-no-files-found: error
           retention-days: 30
