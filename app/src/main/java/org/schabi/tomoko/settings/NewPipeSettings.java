@@ -45,6 +45,16 @@ import java.util.Set;
 public final class NewPipeSettings {
     private NewPipeSettings() { }
 
+    public static boolean isVideoMode(final Context context) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        return prefs.getBoolean(context.getString(R.string.video_mode_key), false);
+    }
+
+    public static void setVideoMode(final Context context, final boolean enabled) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        prefs.edit().putBoolean(context.getString(R.string.video_mode_key), enabled).apply();
+    }
+
     public static void initSettings(final Context context) {
         // first run migrations, then setDefaultValues, since the latter requires the correct types
         MigrationManager.runMigrationsIfNeeded(context);

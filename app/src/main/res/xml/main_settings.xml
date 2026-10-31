@@ -4,6 +4,13 @@
     android:key="general_preferences"
     android:title="@string/settings">
 
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/video_mode_key"
+        android:summary="@string/video_mode_summary"
+        android:title="@string/video_mode"
+        app:iconSpaceReserved="false" />
+
     <PreferenceScreen
         android:fragment="org.coffe.tomoko.settings.VideoAudioSettingsFragment"
         android:icon="@drawable/ic_headset"

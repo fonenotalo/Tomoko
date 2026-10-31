@@ -286,6 +286,7 @@
 
     <!-- Main-Tabs Position -->
     <string name="main_tabs_position_key">main_tabs_position</string>
+    <string name="video_mode_key">video_mode</string>
 
     <!-- Content & History -->
     <string name="show_channel_tabs_key">channel_tabs</string>

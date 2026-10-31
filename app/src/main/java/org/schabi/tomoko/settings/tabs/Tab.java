@@ -31,6 +31,7 @@ import org.coffe.tomoko.local.subscription.SubscriptionFragment;
 import org.coffe.tomoko.util.KioskTranslator;
 import org.coffe.tomoko.util.ServiceHelper;
 
+import java.util.List;
 import java.util.Objects;
 
 public abstract class Tab {
@@ -165,7 +166,8 @@ public abstract class Tab {
         KIOSK(new KioskTab()),
         CHANNEL(new ChannelTab()),
         PLAYLIST(new PlaylistTab()),
-        FEEDGROUP(new FeedGroupTab());
+        FEEDGROUP(new FeedGroupTab()),
+        MUSIC(new MusicTab());
 
         private final Tab tab;
 
@@ -742,6 +744,50 @@ public abstract class Tab {
 
         public int getIconId() {
             return iconId;
+        }
+    }
+
+    public static class MusicTab extends Tab {
+        public static final int ID = 10;
+
+        private MusicTab() { }
+
+        @Override
+        public int getTabId() {
+            return ID;
+        }
+
+        private static String getMusicKioskId(final int serviceId) {
+            try {
+                final StreamingService service = NewPipe.getService(serviceId);
+                final java.util.List<String> kiosks = service.getKioskList().getAvailableKiosks();
+                if (kiosks != null && kiosks.contains("trending_music")) {
+                    return "trending_music";
+                }
+                return service.getKioskList().getDefaultKioskId();
+            } catch (final Exception e) {
+                return "trending_music";
+            }
+        }
+
+        @Override
+        public String getTabName(final Context context) {
+            final int serviceId = ServiceHelper.getSelectedServiceId(context);
+            return KioskTranslator.getTranslatedKioskName(getMusicKioskId(serviceId), context);
+        }
+
+        @DrawableRes
+        @Override
+        public int getTabIconRes(final Context context) {
+            final int serviceId = ServiceHelper.getSelectedServiceId(context);
+            final int icon = KioskTranslator.getKioskIcon(getMusicKioskId(serviceId));
+            return icon > 0 ? icon : R.drawable.ic_music_note;
+        }
+
+        @Override
+        public KioskFragment getFragment(final Context context) throws ExtractionException {
+            final int serviceId = ServiceHelper.getSelectedServiceId(context);
+            return KioskFragment.getInstance(serviceId, getMusicKioskId(serviceId));
         }
     }
 }

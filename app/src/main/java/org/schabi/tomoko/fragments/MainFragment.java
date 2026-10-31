@@ -58,6 +58,8 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
     private TabsManager tabsManager;
 
     private boolean hasTabsChanged = false;
+    private String videoModeKey;
+    private boolean videoMode;
 
     private SharedPreferences prefs;
     private boolean youtubeRestrictedModeEnabled;
@@ -91,6 +93,8 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
         youtubeRestrictedModeEnabled = prefs.getBoolean(youtubeRestrictedModeEnabledKey, false);
         mainTabsPositionKey = getString(R.string.main_tabs_position_key);
         mainTabsPositionBottom = prefs.getBoolean(mainTabsPositionKey, false);
+        videoModeKey = getString(R.string.video_mode_key);
+        videoMode = prefs.getBoolean(videoModeKey, false);
     }
 
     @Override
@@ -128,6 +132,12 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
         if (mainTabsPositionBottom != newMainTabsPosition) {
             mainTabsPositionBottom = newMainTabsPosition;
             updateTabLayoutPosition();
+        }
+
+        final boolean newVideoMode = prefs.getBoolean(videoModeKey, false);
+        if (videoMode != newVideoMode) {
+            videoMode = newVideoMode;
+            setupTabs();
         }
     }
 
@@ -187,7 +197,12 @@ public class MainFragment extends BaseFragment implements TabLayout.OnTabSelecte
 
     private void setupTabs() {
         tabsList.clear();
-        tabsList.addAll(tabsManager.getTabs());
+        videoMode = prefs.getBoolean(videoModeKey, false);
+        if (videoMode) {
+            tabsList.addAll(tabsManager.getTabs());
+        } else {
+            tabsList.add(Tab.Type.MUSIC.getTab());
+        }
 
         if (pagerAdapter == null || !pagerAdapter.sameTabs(tabsList)) {
             pagerAdapter = new SelectedTabsPagerAdapter(requireContext(),
