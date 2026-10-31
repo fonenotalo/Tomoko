@@ -2,142 +2,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Pixel-inspired theme based on Material 3 / Google Pixel style -->
+    <!-- Pixel Light Theme -->
+    <color name="pixel_light_primary">#6750A4</color>
+    <color name="pixel_light_primary_variant">#4F378B</color>
+    <color name="pixel_light_on_primary">#FFFFFF</color>
+    <color name="pixel_light_on_primary_variant">#EADDFF</color>
+    <color name="pixel_light_on_surface">#1D1B20</color>
+    <color name="pixel_light_surface">#FFFBFE</color>
+    <color name="pixel_light_background">#FFFBFE</color>
 
-    <!-- Base Pixel Theme -->
-    <style name="Theme.Tomoko.Pixel" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Primary -->
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorPrimaryVariant">#3F51B5</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
 
-        <!-- Light theme attributes (overridden in values-night) -->
-        <item name="colorPrimary">@color/pixel_light_primary</item>
-        <item name="colorPrimaryVariant">@color/pixel_light_primary_variant</item>
-        <item name="colorOnPrimary">@color/pixel_light_on_primary</item>
-        <item name="colorPrimaryContainer">@color/pixel_light_on_primary_variant</item>
-        <item name="colorOnPrimaryContainer">@color/pixel_light_on_surface</item>
+    <!-- Secondary -->
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryDark">#01A89D</color>
+    <color name="colorSecondaryVariant">#81D4FA</color>
+    <color name="colorOnSecondary">#000000</color>
 
-        <item name="colorSecondary">@color/pixel_light_primary</item>
-        <item name="colorSecondaryVariant">@color/pixel_light_primary_variant</item>
-        <item name="colorOnSecondary">@color/pixel_light_on_primary</item>
+    <!-- Background -->
+    <color name="background_color">#F7F9FC</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="colorOnSurface">#212121</color>
 
-        <item name="colorSurface">@color/pixel_light_surface</item>
-        <item name="colorOnSurface">@color/pixel_light_on_surface</item>
+    <!-- App bar / Toolbar -->
+    <color name="toolbar_background">#FFFFFF</color>
+    <color name="toolbar_title">#212121</color>
 
-        <item name="colorBackground">@color/pixel_light_background</item>
-        <item name="colorOnBackground">@color/pixel_light_on_surface</item>
+    <!-- Dividers / Separators -->
+    <color name="divider_color">#B0BEC5</color>
+    <color name="separator_color">#CFD8DC</color>
 
-        <item name="colorError">#B00020</item>
-        <item name="colorOnError">#FFFFFF</item>
+    <!-- Status bar -->
+    <color name="status_bar_color">#212121</color>
 
-        <item name="colorSurfaceVariant">@color/pixel_light_on_primary_variant</item>
-        <item name="colorOnSurfaceVariant">@color/pixel_light_on_surface</item>
+    <!-- Ripple effect -->
+    <color name="colorRipple">#99673AB7</color>
 
-        <item name="android:colorBackground">@color/pixel_light_background</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
+    <!-- Selection background -->
+    <color name="selection_background">#E8EAF6</color>
 
-        <!-- Shape appearance -->
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Tomoko.SmallComponent</item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Tomoko.MediumComponent</item>
-        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Tomoko.LargeComponent</item>
-
-        <!-- Typography -->
-        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Tomoko.HeadlineLarge</item>
-        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Tomoko.HeadlineMedium</item>
-        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Tomoko.HeadlineSmall</item>
-        <item name="textAppearanceTitleLarge">@style/TextAppearance.Tomoko.TitleLarge</item>
-        <item name="textAppearanceTitleMedium">@style/TextAppearance.Tomoko.TitleMedium</item>
-        <item name="textAppearanceTitleSmall">@style/TextAppearance.Tomoko.TitleSmall</item>
-        <item name="textAppearanceBodyLarge">@style/TextAppearance.Tomoko.BodyLarge</item>
-        <item name="textAppearanceBodyMedium">@style/TextAppearance.Tomoko.BodyMedium</item>
-        <item name="textAppearanceBodySmall">@style/TextAppearance.Tomoko.BodySmall</item>
-        <item name="textAppearanceLabelLarge">@style/TextAppearance.Tomoko.LabelLarge</item>
-        <item name="textAppearanceLabelMedium">@style/TextAppearance.Tomoko.LabelMedium</item>
-        <item name="textAppearanceLabelSmall">@style/TextAppearance.Tomoko.LabelSmall</item>
-
-        <!-- System UI -->
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@color/pixel_light_background</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar">true</item>
-
-        <!-- Elevation overlays -->
-        <item name="elevationOverlayEnabled">true</item>
-
-    </style>
-
-    <!-- Shape Appearance - Pixel style rounded corners -->
-    <style name="ShapeAppearance.Tomoko.SmallComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">4dp</item>
-    </style>
-
-    <style name="ShapeAppearance.Tomoko.MediumComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">12dp</item>
-    </style>
-
-    <style name="ShapeAppearance.Tomoko.LargeComponent">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">16dp</item>
-    </style>
-
-    <!-- Typography - Google Sans inspired -->
-    <style name="TextAppearance.Tomoko.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
-        <item name="fontFamily">sans-serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
-        <item name="fontFamily">sans-serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
-        <item name="fontFamily">sans-serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
-        <item name="fontFamily">sans-serif-medium</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
-        <item name="fontFamily">sans-serif-medium</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
-        <item name="fontFamily">sans-serif-medium</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
-        <item name="fontFamily">sans-serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
-        <item name="fontFamily">sans-serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.BodySmall" parent="TextAppearance.Material3.BodySmall">
-        <item name="fontFamily">sans-serif</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
-        <item name="fontFamily">sans-serif-medium</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
-        <item name="fontFamily">sans-serif-medium</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-    <style name="TextAppearance.Tomoko.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
-        <item name="fontFamily">sans-serif-medium</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
+    <!-- Dark theme dividers -->
+    <color name="divider_color_dark">#455A64</color>
+    <color name="separator_color_dark">#607D8B</color>
 
 </resources>
