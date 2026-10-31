@@ -5,6 +5,8 @@
     <color name="defaultIconTint">@color/black</color>
 
     <color name="ic_launcher_background">#CD201F</color>
+    <!-- Background used by the Tomoko adaptive launcher icon (sampled from icon.jpg). -->
+    <color name="tomoko_ic_launcher_background">#FDEBEF</color>
 
     <color name="placeholder_background">#999999</color>
     <color name="placeholder_foreground">#6C6C6C</color>
