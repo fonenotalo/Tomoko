@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://github.com/fonenotalo/Tomoko/releases"><img src="https://img.shields.io/github/release/fonenotalo/Tomoko.svg?style=for-the-badge&logo=github&color=5865F2"></a>
-<a href="https://github.com/fonenotalo/Tomoko/actions/workflows/build-release-apk.yml"><img src="https://img.shields.io/github/actions/workflow/run/fonenotalo/Tomoko/build-release-apk.yml?branch=main&event=push&style=for-the-badge"></a>
+<a href="https://github.com/fonenotalo/Tomoko/actions/workflows/build-release-apk.yml"><img src="https://img.shields.io/github/actions/workflow-run/fonenotalo/Tomoko/build-release-apk.yml?branch=main&event=push&style=for-the-badge"></a>
 <a href="https://www.gnu.org/licenses/gpl-3.0" alt="License: GPLv3"><img src="https://img.shields.io/badge/License-GPL%20v3-blue?style=for-the-badge&color=2ECC71"></a>
 <a href="https://github.com/fonenotalo/Tomoko/stargazers"><img src="https://img.shields.io/github/stars/fonenotalo/Tomoko?style=for-the-badge&logo=github&color=F1E05A"></a>
 </p>
