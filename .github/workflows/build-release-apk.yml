@@ -31,20 +31,53 @@ jobs:
           printf 'LASTFM_SECRET=%s\n' "$LASTFM_SECRET" >> local.properties
           printf 'LISTEN_TOGETHER_SERVER=https://api.tomoko.app\n' >> local.properties
 
+      - name: Prepare release signing
+        env:
+          KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          set -e
+
+          test -n "$KEYSTORE_BASE64"
+          test -n "$STORE_PASSWORD"
+          test -n "$KEY_ALIAS"
+          test -n "$KEY_PASSWORD"
+
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > tomoko-release.jks
+
+          test -s tomoko-release.jks
+
+          {
+            printf 'storeFile=tomoko-release.jks\n'
+            printf 'storePassword=%s\n' "$STORE_PASSWORD"
+            printf 'keyAlias=%s\n' "$KEY_ALIAS"
+            printf 'keyPassword=%s\n' "$KEY_PASSWORD"
+          } > keystore.properties
+
       - name: Grant execute permission
         run: chmod +x gradlew
 
-      - name: Build unsigned release APK
+      - name: Build signed release APK
         run: |
           ./gradlew :app:assembleRelease \
             --stacktrace \
             --no-configuration-cache \
             --warning-mode all
 
-      - name: Upload APK
+      - name: Verify APK signature
+        run: |
+          APK_PATH="app/build/outputs/apk/release/app-release.apk"
+
+          test -f "$APK_PATH"
+
+          "$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -n 1)/apksigner" verify --verbose "$APK_PATH"
+
+      - name: Upload signed APK
         uses: actions/upload-artifact@v4
         with:
-          name: tomoko-release-unsigned
+          name: tomoko-release-signed
           path: app/build/outputs/apk/release/*.apk
           if-no-files-found: error
           retention-days: 30
