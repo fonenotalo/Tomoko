@@ -38,7 +38,7 @@
         android:resizeableActivity="true"
         
         android:memtagMode="async"
-        android:theme="@style/OpeningTheme"
+        android:theme="@style/Theme.Tomoko.Pixel"
         tools:ignore="AllowBackup">
         <activity
             android:name=".MainActivity"
